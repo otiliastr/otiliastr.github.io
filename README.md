@@ -1,6 +1,6 @@
-# Otilia Stretcu's personal webpage
+# Arash Yadegari's personal webpage
 
-This is the personal website of Otilia Stretcu, which can be visualized at [https://otiliastr.github.io/](https://otiliastr.github.io/).
+This is the personal website of Arash Yadegari, which can be visualized at [https://aryadegari.github.io/](https://aryadegari.github.io/).
 
 ## How to use this template for your website
 
