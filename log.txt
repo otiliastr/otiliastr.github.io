@@ -1,0 +1,5 @@
+Configuration file: /Users/filipe/Dropbox/Pessoal/my_website/filipe-research.github.io/_config.yml
+            Source: /Users/filipe/Dropbox/Pessoal/my_website/filipe-research.github.io
+       Destination: /Users/filipe/Dropbox/Pessoal/my_website/filipe-research.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
