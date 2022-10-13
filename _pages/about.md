@@ -9,7 +9,7 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
 ---
 
 <div class="col p-0 pt-4 pb-4">
-  <h1 class="pb-3 title text-left font-weight-bold">Otilia Stretcu</h1>
+  <h1 class="pb-3 title text-left font-weight-bold">Filipe Cordeiro</h1>
   <h6 class="m-0 mb-2" style="font-size: 0.83em;">{{ page.description }}</h6>
   {% if page.address %}
       <h6 class="m-0 mb-2" style="font-size: 0.83em;">{{ page.address }}</h6>
