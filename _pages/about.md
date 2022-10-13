@@ -5,7 +5,7 @@ title: about
 nav: about
 
 <!--description: <a href="https://ai.google/" target="_blank">Google AI</a> -->
-address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.0862837,17z/data=!3m1!4b1!4m5!3m4!1s0x808fba02425dad8f:0x6c296c66619367e0!8m2!3d37.4220656!4d-122.0840897" class="page-description" target="_blank">Googleplex, Mountain View, California, USA </a>
+address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.0862837,17z/data=!3m1!4b1!4m5!3m4!1s0x808fba02425dad8f:0x6c296c66619367e0!8m2!3d37.4220656!4d-122.0840897" class="page-description" target="_blank">UFRPE. Googleplex, Mountain View, California, USA </a>
 ---
 
 <div class="col p-0 pt-4 pb-4">
@@ -25,7 +25,7 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
         </div>
 
         <p>
-            I am a Research Scientist at <a href="https://ai.google/" target="_blank">Google AI</a> in Mountain View, California, working on machine learning research.
+            Olaaa!!. I am a Research Scientist at <a href="https://ai.google/" target="_blank">Google AI</a> in Mountain View, California, working on machine learning research.
         </p>
         
         <p>
