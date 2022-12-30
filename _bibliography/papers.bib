@@ -63,11 +63,7 @@
 }
 
 @article{DBLP:journals/pr/SachdevaCBRC23,
-  author    = {Sachdeva, Ragav and
-               Cordeiro, Filipe and
-               Belagiannis, Vasileios and
-               Reid, Ian and
-               Carneiro, Gustavo},
+  author = {Stretcu, Otilia and Platanios, Emmanouil Antonios and Mitchell, Tom and Póczos, Barnabás and Cordeiro, Filipe},
   title     = {ScanMix: Learning from Severe Label Noise via Semantic Clustering
                and Semi-Supervised Learning},
   journal   = {Pattern Recognit.},
@@ -80,5 +76,5 @@
   timestamp = {Sun, 25 Dec 2022 14:03:34 +0100},
   biburl    = {https://dblp.org/rec/journals/pr/SachdevaCBRC23.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org},
-  abstract  = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that minimises the empirical vicinal risk using a labelled set formed by samples classified as clean, and an unlabelled set with samples classified as noisy. }}
+  abstract = {{When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly.Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals that are used to pre-train a model before tackling the target task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and then use this acquired knowledge when learning to classify among more fine-grained classes such as cat, dog, car, and truck. Most existing curriculum learning algorithms for supervised learning consist of scheduling the order in which the training examples are presented to the model. In contrast, our approach focuses on the output space of the model. We evaluate our method on several established datasets and show significant performance gains especially on classification problems with many labels. We also evaluate on a new synthetic dataset which allows us to study multiple aspects of our method.}},
 }
