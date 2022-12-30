@@ -84,7 +84,7 @@ plugins:
 
 # Jekyll-Scholar
 scholar:
-  last_name: Stretcu
+  last_name: Cordeiro
   style: apa
   locale: en
   sort_by: year
