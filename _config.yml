@@ -10,7 +10,7 @@ email: filipe.rolim@ufrpe.br
 #   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 # last_updated: true
 
-url:  # the base hostname & protocol for your site
+url: https://filipe-research.github.io/ # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 
 # -----------------------------------------------------------------------------
