@@ -25,7 +25,7 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
         </div>
 
         <p>
-            Olaaa v33!!. I am a Research Scientist at <a href="https://ai.google/" target="_blank">Google AI</a> in Mountain View, California, working on machine learning research.
+            Olaaa v333!!. I am a Research Scientist at <a href="https://ai.google/" target="_blank">Google AI</a> in Mountain View, California, working on machine learning research.
         </p>
         
         <p>
