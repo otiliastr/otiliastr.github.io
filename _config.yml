@@ -17,10 +17,10 @@ baseurl:  # the subpath of your site, e.g. /blog/
 # Social Integration
 # -----------------------------------------------------------------------------
 scholar_userid: UcT4CXoAAAAJ
-github_username: otiliastr
-linkedin_username: otiliastr
-facebook_username: otilia.stretcu
-twitter_username: otilia_stretcu
+github_username: filipe-research
+#linkedin_username: otiliastr
+#facebook_username: otilia.stretcu
+#twitter_username: otilia_stretcu
 contact_note: Feel free to drop me a line via e-mail.
 
 
