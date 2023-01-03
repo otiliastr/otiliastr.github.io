@@ -77,7 +77,7 @@
                Filipe R. Cordeiro},
   title     = {A Study on the Impact of Data Augmentation for Training Convolutional
                Neural Networks in the Presence of Noisy Labels},
-  journal   = {CoRR},
+  booktitle = {SIBGRAPI},
   abbr      = {SIBGRAPI},
   volume    = {abs/2208.11176},
   year      = {2022},
@@ -122,5 +122,140 @@
   bibsource = {dblp computer science bibliography, https://dblp.org},
   abstract = {{Convolutional Neural Networks (CNNs) have become the main solution for image classification tasks in different applications. Although several CNN architectures are available, there is no best architecture regardless the problem at hand. The selection of the most suitable CNN architecture is usually performed by trial and error, which may take much time and computational resources. Meta-learning (MtL) is a framework developed in machine learning to perform algorithm selection based on the meta-features of each task being solved. Such meta-features are usually descriptive characteristics extracted from the training dataset available in the task at hand. Despite the increasing attention of MtL for algorithm selection, its success strongly depends on defining relevant meta-features to represent the classification tasks of interest. This paper proposes the ImageDataset2Vec method for extracting meta-features to describe image classification datasets. ImageDataset2Vec adopts a pre-trained deep neural network to extract features from images datasets, embedding them in a single feature vector. The derived meta-features are employed by MtL to select CNN architectures for image classification. The proposed approach was evaluated for selecting among six CNN algorithms in 45 two-classes image datasets. The results showed that MtL using ImageDataset2Vec overcame different baseline methods, selecting the best possible CNN algorithm in  of the datasets. Furthermore, the proposal was statistically equivalent to the ground truth when the best CNN is recommended, i.e., when MtL does not select the best CNN, it selects a competitive algorithm. These results show that the proposal was able to extract representative features from image datasets.}}
 }
+
+@inproceedings{CordeiroB0C21,
+  author    = {Filipe Rolim Cordeiro and
+               Vasileios Belagiannis and
+               Ian Reid and
+               Gustavo Carneiro},
+  title     = {PropMix: Hard Sample Filtering and Proportional MixUp for Learning
+               with Noisy Labels},
+  booktitle = {32nd British Machine Vision Conference 2021, {BMVC} 2021, Online,
+               November 22-25, 2021},
+  pages     = {187},
+  publisher = {{BMVA} Press},
+  abbr = {BMVC},
+  year      = {2021},
+  url       = {https://www.bmvc2021-virtualconference.com/assets/papers/0908.pdf},
+  timestamp = {Wed, 22 Jun 2022 16:52:45 +0200},
+  biburl    = {https://dblp.org/rec/conf/bmvc/CordeiroB0C21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{The most competitive noisy label learning methods rely on an unsupervised classification of clean and noisy samples, where samples classified as noisy are re-labelled
+and "MixMatched" with the clean samples. These methods have two issues in large
+noise rate problems: 1) the noisy set is more likely to contain hard samples that are incorrectly re-labelled, and 2) the number of samples produced by MixMatch tends to be
+reduced because it is constrained by the small clean set size. In this paper, we introduce
+the learning algorithm PropMix to handle the issues above. PropMix filters out hard
+noisy samples, with the goal of increasing the likelihood of correctly re-labelling the
+easy noisy samples. Also, PropMix places clean and re-labelled easy noisy samples in
+a training set that is augmented with MixUp, removing the clean set size constraint and
+including a large proportion of correctly re-labelled easy noisy samples. We also include
+self-supervised pre-training to improve robustness to high noisy label scenarios. Our
+experiments show that PropMix has state-of-the-art (SOTA) results on CIFAR-10/-100
+(with symmetric, asymmetric and semantic label noise), Red Mini-ImageNet (from the
+Controlled Noisy Web Labels), Clothing1M and WebVision. In severe label noise benchmarks, our results are substantially better than other methods. }},
+ code = {https://github.com/filipe-research/PropMix},
+ arxiv = {https://arxiv.org/abs/2110.11809}
+}
+
+@inproceedings{SilvaRMCSNMN21,
+  author    = {Cleber A. C. F. da Silva and
+               Daniel Carneiro Rosa and
+               P{\'{e}}ricles B. C. de Miranda and
+               Filipe R. Cordeiro and
+               Tapas Si and
+               Andr{\'{e}} C. A. Nascimento and
+               Rafael Ferreira Leite de Mello and
+               Paulo S. G. de Mattos Neto},
+  title     = {A Multi-Objective Grammatical Evolution Framework to Generate Convolutional
+               Neural Network Architectures},
+  booktitle = {{IEEE} Congress on Evolutionary Computation, {CEC} 2021, Krak{\'{o}}w,
+               Poland, June 28 - July 1, 2021},
+  abbr = {CEC},
+  pages     = {2187--2194},
+  publisher = {{IEEE}},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/CEC45853.2021.9504822},
+  doi       = {10.1109/CEC45853.2021.9504822},
+  timestamp = {Fri, 03 Dec 2021 17:38:14 +0100},
+  biburl    = {https://dblp.org/rec/conf/cec/SilvaRMCSNMN21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{Deep Convolutional Neural Networks (CNNs) have reached the attention in the last decade due to their successful application to many computer vision domains. Several handcrafted architectures have been proposed in the literature, with increasing depth and millions of parameters. However, the optimal architecture size and parameters setup are dataset-dependent and challenging to find. For addressing this problem, this work proposes a Multi-Objective Grammatical Evolution framework to automatically generate suitable CNN architectures (layers and parameters) for a given classification problem. For this, a Context-free Grammar is developed, representing the search space of possible CNN architectures. The proposed method seeks to find suitable network architectures considering two objectives: accuracy and F1-score. We evaluated our method on CIFAR-10, and the results obtained show that our method generates simpler CNN architectures and overcomes the results achieved by larger (more complex) state-of-the-art CNN approaches and other grammars.}}
+}
+
+@inproceedings{LiuTCBRC21,
+  author    = {Fengbei Liu and
+               Yu Tian and
+               Filipe R. Cordeiro and
+               Vasileios Belagiannis and
+               Ian D. Reid and
+               Gustavo Carneiro},
+  editor    = {Chunfeng Lian and
+               Xiaohuan Cao and
+               Islem Rekik and
+               Xuanang Xu and
+               Pingkun Yan},
+  title     = {Self-supervised Mean Teacher for Semi-supervised Chest X-Ray Classification},
+  booktitle = {Machine Learning in Medical Imaging - 12th International Workshop,
+               {MLMI} 2021, Held in Conjunction with {MICCAI} 2021, Strasbourg, France,
+               September 27, 2021, Proceedings},
+  abbr = {MICCAI},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12966},
+  pages     = {426--436},
+  publisher = {Springer},
+  year      = {2021},
+  url       = {https://doi.org/10.1007/978-3-030-87589-3\_44},
+  doi       = {10.1007/978-3-030-87589-3\_44},
+  timestamp = {Thu, 23 Jun 2022 19:55:04 +0200},
+  biburl    = {https://dblp.org/rec/conf/miccai/LiuTCBRC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{The training of deep learning models generally requires a large amount of annotated data for effective convergence and generalisation. However, obtaining high-quality annotations is a laboursome and expensive process due to the need of expert radiologists for the labelling task. The study of semi-supervised learning in medical image analysis is then of crucial importance given that it is much less expensive to obtain unlabelled images than to acquire images labelled by expert radiologists. Essentially, semi-supervised methods leverage large sets of unlabelled data to enable better training convergence and generalisation than using only the small set of labelled images. In this paper, we propose Self-supervised Mean Teacher for Semi-supervised (S2MTS2) learning that combines self-supervised mean-teacher pre-training with semi-supervised fine-tuning. The main innovation of S2MTS2 is the self-supervised mean-teacher pre-training based on the joint contrastive learning, which uses an infinite number of pairs of positive query and key features to improve the mean-teacher representation. The model is then fine-tuned using the exponential moving average teacher framework trained with semi-supervised learning. We validate S2MTS2 on the multi-label classification problems from Chest X-ray14 and CheXpert, and the multi-class classification from ISIC2018, where we show that it outperforms the previous SOTA semi-supervised learning methods by a large margin. Our code will be available upon paper acceptance}}
+}
+
+@inproceedings{SilvaMC21,
+  author    = {Cleber A. C. F. da Silva and
+               P{\'{e}}ricles B. C. de Miranda and
+               Filipe R. Cordeiro},
+  title     = {A New Grammar for Creating Convolutional Neural Networks Applied to
+               Medical Image Classification},
+  booktitle = {34th {SIBGRAPI} Conference on Graphics, Patterns and Images, {SIBGRAPI}
+               2021, Gramado, Rio Grande do Sul, Brazil, October 18-22, 2021},
+  abbr = {SIBGRAPI},
+  pages     = {97--104},
+  publisher = {{IEEE}},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/SIBGRAPI54419.2021.00022},
+  doi       = {10.1109/SIBGRAPI54419.2021.00022},
+  timestamp = {Tue, 28 Dec 2021 14:39:31 +0100},
+  biburl    = {https://dblp.org/rec/conf/sibgrapi/SilvaMC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract= {{In the last decade, the adoption of Deep Convolutional Neural Networks (CNNs) has been successfully applied to solve computer vision tasks, such as image classification in the medical field. However, the several architectures proposed in the literature are composed of an increasing number of parameters and complexity. Therefore, finding the optimal trade-off between accuracy and model complexity for a given data set is challenging. To help the search for these suitable configurations, this work proposes using a new Context-Free Grammar associated with a Multi-Objective Grammatical Evolution Algorithm that generates suitable CNNs for a given image classification problem. In this structure, the new grammar maps every possible search space for the creation of networks. Furthermore, the Multi- Objective Grammatical Evolution Algorithm used optimizes this search taking into account two objective functions: accuracy and F 1 -score. Our proposal was used in three medical image datasets from MedMNIST: PathMNIST, OCTMNIST, and OrganMNIST_Axial. The results showed that our method generated simpler networks with equal or superior performance from state-of-the-art (more complex) networks and others CNNs also generated by grammatical evolution process}}
+}
+
+@inproceedings{SachdevaCBRC21,
+  author    = {Ragav Sachdeva and
+               Filipe R. Cordeiro and
+               Vasileios Belagiannis and
+               Ian D. Reid and
+               Gustavo Carneiro},
+  title     = {EvidentialMix: Learning with Combined Open-set and Closed-set Noisy
+               Labels},
+  booktitle = {{IEEE} Winter Conference on Applications of Computer Vision, {WACV}
+               2021, Waikoloa, HI, USA, January 3-8, 2021},
+  pages     = {3606--3614},
+  publisher = {{IEEE}},
+  abbr = {WACV},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/WACV48630.2021.00365},
+  doi       = {10.1109/WACV48630.2021.00365},
+  timestamp = {Wed, 07 Dec 2022 23:09:22 +0100},
+  biburl    = {https://dblp.org/rec/conf/wacv/SachdevaCBRC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{The efficacy of deep learning depends on large-scale data sets that have been carefully curated with reliable data acquisition and annotation processes. However, acquiring such large-scale data sets with precise annotations is very expensive and time-consuming, and the cheap alternatives often yield data sets that have noisy labels. The field has addressed this problem by focusing on training models under two types of label noise: 1) closed-set noise, where some training samples are incorrectly annotated to a training label other than their known true class; and 2) open-set noise, where the training set includes samples that possess a true class that is (strictly) not contained in the set of known training labels. In this work, we study a new variant of the noisy label problem that combines the open-set and closed-set noisy labels, and introduce a benchmark evaluation to assess the performance of training algorithms under this setup. We argue that such problem is more general and better reflects the noisy label scenarios in practice. Furthermore, we propose a novel algorithm, called EvidentialMix, that addresses this problem and compare its performance with the state-of-the-art methods for both closed-set and open-set noise on the proposed benchmark. Our results show that our method produces superior classification results and better feature representations than previous state-of-the-art methods.}},
+  code = {https:/github.com/ragavsachdeva/EvidentialMix},
+  arxiv = {https://arxiv.org/abs/2011.05704}
+}
+a service of  Schloss Dagstuhl - Leibniz Center for Informatics	homebrowsesearchaboutnfdi
+
 
 
