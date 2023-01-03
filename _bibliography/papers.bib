@@ -1,6 +1,31 @@
 ---
 ---
-@article{DBLP:journals/pr/CordeiroSBRC23,
+@article{journals/eswa/SilvaRMCSNMN23,
+  author    = {Cleber A. C. F. da Silva and
+               Daniel Carneiro Rosa and
+               P{\'{e}}ricles B. C. de Miranda and
+               Filipe R. Cordeiro and
+               Tapas Si and
+               Andr{\'{e}} C. A. Nascimento and
+               Rafael Ferreira Leite de Mello and
+               Paulo S. G. de Mattos Neto},
+  title     = {A novel multi-objective grammar-based framework for the generation
+               of Convolutional Neural Networks},
+  journal   = {Expert Syst. Appl.},
+  abbr      = {ESA},
+  volume    = {212},
+  pages     = {118670},
+  year      = {2023},
+  url       = {https://doi.org/10.1016/j.eswa.2022.118670},
+  doi       = {10.1016/j.eswa.2022.118670},
+  timestamp = {Tue, 06 Dec 2022 13:15:00 +0100},
+  biburl    = {https://dblp.org/rec/journals/eswa/SilvaRMCSNMN23.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {{In recent years, the adoption of deep Convolutional Neural Networks (CNNs) has stood out in solving computer vision tasks, such as image classification. Researchers have proposed several architectures with varying sizes, complexities, and an increasing number of trainable parameters. For this reason, finding an optimized configuration and architecture with reduced complexity and high performance has become a very difficult task, since these configurations are totally dependent on the target classification problem and mostly depend on the optimization of a specialist in the area. To assist in the search for these optimal configurations, this work proposes the use of a multi-objective grammatical evolution framework, composed of a multi-objective search engine, a new context-free grammar responsible for creating the problem search space and a process mapping of individuals. Such a framework automatically generates and optimizes CNNs for a given image classification problem, without the need for human intervention from an expert. The framework navigates the search space using two objective functions seeking to maximize two metrics: accuracy and -score. The proposal was validated in the CIFAR-10, CIFAR-100, MNIST, KMNIST and EuroSAT datasets and the results show that the proposed method is able to generate simpler networks, but that statistically outperform (more complex) state-of-the-art CNNs in both metrics considered in the study.}}
+}
+
+
+@article{journals/pr/CordeiroSBRC23,
   author    = {Filipe R. Cordeiro and
                Ragav Sachdeva and
                Vasileios Belagiannis and
@@ -9,65 +34,30 @@
   title     = {LongReMix: Robust learning with high confidence samples in a noisy
                label environment},
   journal   = {Pattern Recognit.},
+  abbr = {PR},
   volume    = {133},
   pages     = {109013},
   year      = {2023},
-  abbr = {PR},
   url       = {https://doi.org/10.1016/j.patcog.2022.109013},
   doi       = {10.1016/j.patcog.2022.109013},
   timestamp = {Tue, 08 Nov 2022 21:43:05 +0100},
   biburl    = {https://dblp.org/rec/journals/pr/CordeiroSBRC23.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org},
-  abstract  = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to
-   classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that
-    minimises the empirical vicinal risk using a labelled set formed by samples classified as clean,
-     and an unlabelled set with samples classified as noisy. The classification accuracy of such
-      noisy-label learning methods depends on the precision of the unsupervised classification of
-       clean and noisy samples, and the robustness of SSL to small clean sets. We address these points
-        with a new noisy-label training algorithm, called LongReMix, which improves the precision of
-         the unsupervised classification of clean and noisy samples and the robustness of SSL to small
-          clean sets with a two-stage learning process. The stage one of LongReMix finds a small but
-           precise high-confidence clean set, and stage two augments this high-confidence clean set
-            with new clean samples and oversamples the clean data to increase the robustness of SSL to
-             small clean sets. We test LongReMix on CIFAR-10 and CIFAR-100 with introduced synthetic
-              noisy labels, and the real-world noisy-label benchmarks CNWL (Red Mini-ImageNet), 
-              WebVision, Clothing1M, and Food101-N. The results show that our LongReMix produces
-               significantly better classification accuracy than competing approaches, particularly in
-                high noise rate problems. Furthermore, our approach achieves state-of-the-art 
-                performance in most datasets}},
-  code = {https://github.com/filipe-research/LongReMix}
+  abstract  = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that minimises the empirical vicinal risk using a labelled set formed by samples classified as clean, and an unlabelled set with samples classified as noisy. The classification accuracy of such noisy-label learning methods depends on the precision of the unsupervised classification of clean and noisy samples, and the robustness of SSL to small clean sets. We address these points with a new noisy-label training algorithm, called LongReMix, which improves the precision of the unsupervised classification of clean and noisy samples and the robustness of SSL to small clean sets with a two-stage learning process. The stage one of LongReMix finds a small but precise high-confidence clean set, and stage two augments this high-confidence clean set with new clean samples and oversamples the clean data to increase the robustness of SSL to small clean sets. We test LongReMix on CIFAR-10 and CIFAR-100 with introduced synthetic noisy labels, and the real-world noisy-label benchmarks CNWL (Red Mini-ImageNet), WebVision, Clothing1M, and Food101-N. The results show that our LongReMix produces significantly better classification accuracy than competing approaches, particularly in high noise rate problems. Furthermore, our approach achieves state-of-the-art performance in most datasets. }},
+  code      = {https://github.com/filipe-research/LongReMix},
+  arxiv     = {https://arxiv.org/abs/2103.04173}
 }
 
-@article{DBLP:journals/eswa/SilvaRMCSNMN23,
-  author    = {Cleber A. C. F. da Silva and
-               Daniel Carneiro Rosa and
-               Péricles B. C. de Miranda and
-               Filipe R. Cordeiro and
-               Tapas Si and
-               André C. A. Nascimento and
-               Rafael Ferreira Leite de Mello and
-               Paulo S. G. de Mattos Neto},
-  title     = {A novel multi-objective grammar-based framework for the generation
-               of Convolutional Neural Networks},
-  journal   = {Expert Syst. Appl.},
-  abbr =     {ESA},
-  volume    = {212},
-  pages     = {118670},
-  year      = {2023},
-  url       = {https://doi.org/10.1016/j.eswa.2022.118670},
-  doi       = {10.1016/j.eswa.2022.118670},
-  timestamp = {Tue, 06 Dec 2022 13:15:00 +0100},
-  biburl    = {https://dblp.org/rec/journals/eswa/SilvaRMCSNMN23.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  abstract  = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that minimises the empirical vicinal risk using a labelled set formed by samples classified as clean, and an unlabelled set with samples classified as noisy. The classification accuracy of such noisy-label learning methods depends on the precision of the unsupervised classification of clean and noisy samples, and the robustness of SSL to small clean sets. We address these points with a new noisy-label training algorithm, called LongReMix, which improves the precision of the unsupervised classification of clean and noisy samples and the robustness of SSL to small clean sets with a two-stage learning process. The stage one of LongReMix finds a small but precise high-confidence clean set, and stage two augments this high-confidence clean set with new clean samples and oversamples the clean data to increase the robustness of SSL to small clean sets. We test LongReMix on CIFAR-10 and CIFAR-100 with introduced synthetic noisy labels, and the real-world noisy-label benchmarks CNWL (Red Mini-ImageNet), WebVision, Clothing1M, and Food101-N. The results show that our LongReMix produces significantly better classification accuracy than competing approaches, particularly in high noise rate problems. Furthermore, our approach achieves state-of-the-art performance in most datasets}}
-}
-
-@article{DBLP:journals/pr/SachdevaCBRC23,
-  author = {Stretcu, Otilia and Platanios, Emmanouil Antonios and Mitchell, Tom and Póczos, Barnabás and Cordeiro, Filipe},
+@article{journals/pr/SachdevaCBRC23,
+  author    = {Ragav Sachdeva and
+               Filipe Rolim Cordeiro and
+               Vasileios Belagiannis and
+               Ian Reid and
+               Gustavo Carneiro},
   title     = {ScanMix: Learning from Severe Label Noise via Semantic Clustering
                and Semi-Supervised Learning},
   journal   = {Pattern Recognit.},
-  abbr = {PR},
+  abbr      = {PR},
   volume    = {134},
   pages     = {109121},
   year      = {2023},
@@ -76,68 +66,9 @@
   timestamp = {Sun, 25 Dec 2022 14:03:34 +0100},
   biburl    = {https://dblp.org/rec/journals/pr/SachdevaCBRC23.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org},
-  abstract = {{When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly.Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals that are used to pre-train a model before tackling the target task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and then use this acquired knowledge when learning to classify among more fine-grained classes such as cat, dog, car, and truck. Most existing curriculum learning algorithms for supervised learning consist of scheduling the order in which the training examples are presented to the model. In contrast, our approach focuses on the output space of the model. We evaluate our method on several established datasets and show significant performance gains especially on classification problems with many labels. We also evaluate on a new synthetic dataset which allows us to study multiple aspects of our method.}},
-
-  
+  abstract  = {We propose a new training algorithm, ScanMix, that explores semantic clustering and semi-supervised learning (SSL) to allow superior robustness to severe label noise and competitive robustness to non-severe label noise problems, in comparison to the state of the art (SOTA) methods. ScanMix is based on the expectation maximisation framework, where the E-step estimates the latent variable to cluster the training images based on their appearance and classification results, and the M-step optimises the SSL classification and learns effective feature representations via semantic clustering. We present a theoretical result that shows the correctness and convergence of ScanMix, and an empirical result that shows that ScanMix has SOTA results on CIFAR-10/-100 (with symmetric, asymmetric and semantic label noise), Red Mini-ImageNet (from the Controlled Noisy Web Labels), Clothing1M and WebVision. In all benchmarks with severe label noise, our results are competitive to the current SOTA.},
+  arxiv     = {https://arxiv.org/abs/2103.11395},
+  code      = {https://github.com/ragavsachdeva/ScanMix}
 }
 
-@inproceedings{braintasks2020,
-    title = {Modeling Task Effects on Meaning Representation in the Brain via Zero-Shot MEG Prediction},
-    author = {Toneva<nobr><em>*</em></nobr>, Mariya and Stretcu<nobr><em>*</em></nobr>, Otilia and Póczos, Barnabás and Wehbe, Leila and Mitchell, Tom},
-    booktitle = {Proceedings of the Thirty-fourth Conference on Neural Information Processing Systems},
-    year = {2020},
-    organization = {Neural Information Processing Systems},
-    abbr = {NeurIPS},
-    pdf = {brain-tasks-neurips/arxiv.pdf},
-    arxiv = {2009.08424},
-    video = {https://youtu.be/-SXlEhSTSi8},
-    code = {https://github.com/otiliastr/brain_task_effect},
-    abstract = {{How meaning is represented in the brain is still one of the big open questions in neuroscience. Does a word (e.g., bird) always have the same representation, or does the task under which the word is processed alter its representation (answering "can you eat it?" versus "can it fly?")? The brain activity of subjects who read the same word while performing different semantic tasks has been shown to differ across tasks. However, it is still not understood how the task itself contributes to this difference. In the current work, we study Magnetoencephalography (MEG) brain recordings of participants tasked with answering questions about concrete nouns. We investigate the effect of the task (i.e. the question being asked) on the processing of the concrete noun by predicting the millisecond-resolution MEG recordings as a function of both the semantics of the noun and the task. Using this approach, we test several hypotheses about the task-stimulus interactions by comparing the zero-shot predictions made by these hypotheses for novel tasks and nouns not seen during training. We find that incorporating the task semantics significantly improves the prediction of MEG recordings, across participants. The improvement occurs 475-550ms after the participants first see the word, which corresponds to what is considered to be the ending time of semantic processing for a word. These results suggest that only the end of semantic processing of a word is task-dependent, and pose a challenge for future research to formulate new hypotheses for earlier task effects as a function of the task and stimuli.}}
-}
-
-@inproceedings{easy2022,
-  author    = {Cleber A. C. F. da Silva and
-               Daniel Carneiro Rosa and
-               Péricles B. C. de Miranda and
-               Filipe R. Cordeiro and
-               Tapas Si and
-               André C. A. Nascimento and
-               Rafael Ferreira Leite de Mello and
-               Paulo S. G. de Mattos Neto},
-  title     = {A4 novel multi-objective grammar-based framework for the generation
-               of Convolutional Neural Networks},
-  journal   = {Expert Syst. Appl.},
-  abbr =     {ESA},
-  volume    = {212},
-  pages     = {118670},
-  year      = {2022},
-  url       = {https://doi.org/10.1016/j.eswa.2022.118670},
-  doi       = {10.1016/j.eswa.2022.118670},
-  timestamp = {Tue, 06 Dec 2022 13:15:00 +0100},
-  biburl    = {https://dblp.org/rec/journals/eswa/SilvaRMCSNMN23.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  abstract  = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that minimises the empirical vicinal risk using a labelled set formed by samples classified as clean, and an unlabelled set with samples classified as noisy. The classification accuracy of such noisy-label learning methods depends on the precision of the unsupervised classification of clean and noisy samples, and the robustness of SSL to small clean sets. We address these points with a new noisy-label training algorithm, called LongReMix, which improves the precision of the unsupervised classification of clean and noisy samples and the robustness of SSL to small clean sets with a two-stage learning process. The stage one of LongReMix finds a small but precise high-confidence clean set, and stage two augments this high-confidence clean set with new clean samples and oversamples the clean data to increase the robustness of SSL to small clean sets. We test LongReMix on CIFAR-10 and CIFAR-100 with introduced synthetic noisy labels, and the real-world noisy-label benchmarks CNWL (Red Mini-ImageNet), WebVision, Clothing1M, and Food101-N. The results show that our LongReMix produces significantly better classification accuracy than competing approaches, particularly in high noise rate problems. Furthermore, our approach achieves state-of-the-art performance in most datasets}}
-}
-
-@inproceedings{braintasks2020,
-    title = {AX novel multi-objective grammar-based framework for the generation
-               of Convolutional Neural Networks},
-    author    = {Cleber A. C. F. da Silva and
-               Daniel Carneiro Rosa and
-               Péricles B. C. de Miranda and
-               Filipe R. Cordeiro and
-               Tapas Si and
-               André C. A. Nascimento and
-               Rafael Ferreira Leite de Mello and
-               Paulo S. G. de Mattos Neto},
-    booktitle = {Proceedings of the Thirty-fourth Conference on Neural Information Processing Systems},
-    year = {2021},
-    organization = {Expert Syst. Appl.},
-    abbr =     {ESA},
-    pdf = {brain-tasks-neurips/arxiv.pdf},
-    arxiv = {2009.08424},
-    video = {https://youtu.be/-SXlEhSTSi8},
-    code = {https://github.com/otiliastr/brain_task_effect},
-    abstract = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that minimises the empirical vicinal risk using a labelled set formed by samples classified as clean, and an unlabelled set with samples classified as noisy. The classification accuracy of such noisy-label learning methods depends on the precision of the unsupervised classification of clean and noisy samples, and the robustness of SSL to small clean sets. We address these points with a new noisy-label training algorithm, called LongReMix, which improves the precision of the unsupervised classification of clean and noisy samples and the robustness of SSL to small clean sets with a two-stage learning process. The stage one of LongReMix finds a small but precise high-confidence clean set, and stage two augments this high-confidence clean set with new clean samples and oversamples the clean data to increase the robustness of SSL to small clean sets. We test LongReMix on CIFAR-10 and CIFAR-100 with introduced synthetic noisy labels, and the real-world noisy-label benchmarks CNWL (Red Mini-ImageNet), WebVision, Clothing1M, and Food101-N. The results show that our LongReMix produces significantly better classification accuracy than competing approaches, particularly in high noise rate problems. Furthermore, our approach achieves state-of-the-art performance in most datasets}}
-}
 
