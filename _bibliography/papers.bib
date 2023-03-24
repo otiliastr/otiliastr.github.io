@@ -1,241 +1,261 @@
 ---
 ---
-@inproceedings{stretcu2021c2f,
-    title = {Coarse-to-Fine Curriculum Learning},
-    author = {Stretcu, Otilia and Platanios, Emmanouil Antonios and Mitchell, Tom and Póczos, Barnabás},
-    booktitle = {ArXiv Preprint},
-    year = {2021},
-    abbr = {arXiv},
-    arxiv = {2106.04072},
-    abstract = {{When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly.Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals that are used to pre-train a model before tackling the target task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and then use this acquired knowledge when learning to classify among more fine-grained classes such as cat, dog, car, and truck. Most existing curriculum learning algorithms for supervised learning consist of scheduling the order in which the training examples are presented to the model. In contrast, our approach focuses on the output space of the model. We evaluate our method on several established datasets and show significant performance gains especially on classification problems with many labels. We also evaluate on a new synthetic dataset which allows us to study multiple aspects of our method.}},
+@article{SilvaRMCSNMN23,
+  author    = {Cleber A. C. F. da Silva and
+               Daniel Carneiro Rosa and
+               P{\'{e}}ricles B. C. de Miranda and
+               Filipe R. Cordeiro and
+               Tapas Si and
+               Andr{\'{e}} C. A. Nascimento and
+               Rafael Ferreira Leite de Mello and
+               Paulo S. G. de Mattos Neto},
+  title     = {A novel multi-objective grammar-based framework for the generation
+               of Convolutional Neural Networks},
+  journal   = {Expert Syst. Appl.},
+  abbr      = {ESA},
+  volume    = {212},
+  pages     = {118670},
+  year      = {2023},
+  url       = {https://doi.org/10.1016/j.eswa.2022.118670},
+  doi       = {10.1016/j.eswa.2022.118670},
+  timestamp = {Tue, 06 Dec 2022 13:15:00 +0100},
+  biburl    = {https://dblp.org/rec/journals/eswa/SilvaRMCSNMN23.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {{In recent years, the adoption of deep Convolutional Neural Networks (CNNs) has stood out in solving computer vision tasks, such as image classification. Researchers have proposed several architectures with varying sizes, complexities, and an increasing number of trainable parameters. For this reason, finding an optimized configuration and architecture with reduced complexity and high performance has become a very difficult task, since these configurations are totally dependent on the target classification problem and mostly depend on the optimization of a specialist in the area. To assist in the search for these optimal configurations, this work proposes the use of a multi-objective grammatical evolution framework, composed of a multi-objective search engine, a new context-free grammar responsible for creating the problem search space and a process mapping of individuals. Such a framework automatically generates and optimizes CNNs for a given image classification problem, without the need for human intervention from an expert. The framework navigates the search space using two objective functions seeking to maximize two metrics: accuracy and -score. The proposal was validated in the CIFAR-10, CIFAR-100, MNIST, KMNIST and EuroSAT datasets and the results show that the proposed method is able to generate simpler networks, but that statistically outperform (more complex) state-of-the-art CNNs in both metrics considered in the study.}}
 }
 
-@inproceedings{braintasks2020,
-    title = {Modeling Task Effects on Meaning Representation in the Brain via Zero-Shot MEG Prediction},
-    author = {Toneva<nobr><em>*</em></nobr>, Mariya and Stretcu<nobr><em>*</em></nobr>, Otilia and Póczos, Barnabás and Wehbe, Leila and Mitchell, Tom},
-    booktitle = {Proceedings of the Thirty-fourth Conference on Neural Information Processing Systems},
-    year = {2020},
-    organization = {Neural Information Processing Systems},
-    abbr = {NeurIPS},
-    pdf = {brain-tasks-neurips/arxiv.pdf},
-    arxiv = {2009.08424},
-    video = {https://youtu.be/-SXlEhSTSi8},
-    code = {https://github.com/otiliastr/brain_task_effect},
-    abstract = {{How meaning is represented in the brain is still one of the big open questions in neuroscience. Does a word (e.g., bird) always have the same representation, or does the task under which the word is processed alter its representation (answering "can you eat it?" versus "can it fly?")? The brain activity of subjects who read the same word while performing different semantic tasks has been shown to differ across tasks. However, it is still not understood how the task itself contributes to this difference. In the current work, we study Magnetoencephalography (MEG) brain recordings of participants tasked with answering questions about concrete nouns. We investigate the effect of the task (i.e. the question being asked) on the processing of the concrete noun by predicting the millisecond-resolution MEG recordings as a function of both the semantics of the noun and the task. Using this approach, we test several hypotheses about the task-stimulus interactions by comparing the zero-shot predictions made by these hypotheses for novel tasks and nouns not seen during training. We find that incorporating the task semantics significantly improves the prediction of MEG recordings, across participants. The improvement occurs 475-550ms after the participants first see the word, which corresponds to what is considered to be the ending time of semantic processing for a word. These results suggest that only the end of semantic processing of a word is task-dependent, and pose a challenge for future research to formulate new hypotheses for earlier task effects as a function of the task and stimuli.}}
+
+@article{CordeiroSBRC23,
+  author    = {Filipe R. Cordeiro and
+               Ragav Sachdeva and
+               Vasileios Belagiannis and
+               Ian D. Reid and
+               Gustavo Carneiro},
+  title     = {LongReMix: Robust learning with high confidence samples in a noisy
+               label environment},
+  journal   = {Pattern Recognit.},
+  abbr = {PR},
+  volume    = {133},
+  pages     = {109013},
+  year      = {2023},
+  url       = {https://doi.org/10.1016/j.patcog.2022.109013},
+  doi       = {10.1016/j.patcog.2022.109013},
+  timestamp = {Tue, 08 Nov 2022 21:43:05 +0100},
+  biburl    = {https://dblp.org/rec/journals/pr/CordeiroSBRC23.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {{State-of-the-art noisy-label learning algorithms rely on an unsupervised learning to classify training samples as clean or noisy, followed by a semi-supervised learning (SSL) that minimises the empirical vicinal risk using a labelled set formed by samples classified as clean, and an unlabelled set with samples classified as noisy. The classification accuracy of such noisy-label learning methods depends on the precision of the unsupervised classification of clean and noisy samples, and the robustness of SSL to small clean sets. We address these points with a new noisy-label training algorithm, called LongReMix, which improves the precision of the unsupervised classification of clean and noisy samples and the robustness of SSL to small clean sets with a two-stage learning process. The stage one of LongReMix finds a small but precise high-confidence clean set, and stage two augments this high-confidence clean set with new clean samples and oversamples the clean data to increase the robustness of SSL to small clean sets. We test LongReMix on CIFAR-10 and CIFAR-100 with introduced synthetic noisy labels, and the real-world noisy-label benchmarks CNWL (Red Mini-ImageNet), WebVision, Clothing1M, and Food101-N. The results show that our LongReMix produces significantly better classification accuracy than competing approaches, particularly in high noise rate problems. Furthermore, our approach achieves state-of-the-art performance in most datasets. }},
+  code      = {https://github.com/filipe-research/LongReMix},
+  arxiv     = {https://arxiv.org/abs/2103.04173}
 }
 
-@inproceedings{stoica2020AAAI,
-    title = {Contextual Parameter Generation for Knowledge Graph Link Prediction},
-    author = {Stoica<nobr><em>*</em></nobr>, George  and Stretcu*, Otilia and Platanios<nobr><em>*</em></nobr>, Emmanouil Antonios and Mitchell, Tom and Póczos, Barnabás},
-    booktitle = {Proceedings of the Thirty-fourth AAAI Conference on Artificial Intelligence},
-    year = {2020},
-    organization = {AAAI Conference on Artificial Intelligence},
-    abbr = {AAAI},
-    pdf = {coper-aaai/coper-aaai-paper.pdf},
-    poster = {coper-aaai/coper-aaai-poster.pdf},
-    supplement = {coper-aaai/coper_aaai_supplementary.pdf},
-    abstract = {{We consider the task of knowledge graph link prediction. Recent approaches tackle this problem by learning entity and relation embeddings. However, they often constrain the relationship between these embeddings to be additive (i.e., the embeddings are concatenated and then processed by a sequence of linear functions and element-wise non-linearities). We show that this type of interaction significantly limits representational power, and instead propose to use contextual parameter generation to address this limitation. More specifically, we treat relations as the context in which entities are processed to produce predictions, by using relation embeddings to generate the parameters of a model operating over entity embeddings. We apply our method on two existing link prediction methods, including the current state-of-the-art, resulting in significant performance gains and establishing a new state-of-the-art for this task. These gains are achieved while also reducing training time by up to 28 times.}}
+@article{SachdevaCBRC23,
+  author    = {Ragav Sachdeva and
+               Filipe Rolim Cordeiro and
+               Vasileios Belagiannis and
+               Ian Reid and
+               Gustavo Carneiro},
+  title     = {ScanMix: Learning from Severe Label Noise via Semantic Clustering
+               and Semi-Supervised Learning},
+  journal   = {Pattern Recognit.},
+  abbr      = {PR},
+  volume    = {134},
+  pages     = {109121},
+  year      = {2023},
+  url       = {https://doi.org/10.1016/j.patcog.2022.109121},
+  doi       = {10.1016/j.patcog.2022.109121},
+  timestamp = {Sun, 25 Dec 2022 14:03:34 +0100},
+  biburl    = {https://dblp.org/rec/journals/pr/SachdevaCBRC23.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {We propose a new training algorithm, ScanMix, that explores semantic clustering and semi-supervised learning (SSL) to allow superior robustness to severe label noise and competitive robustness to non-severe label noise problems, in comparison to the state of the art (SOTA) methods. ScanMix is based on the expectation maximisation framework, where the E-step estimates the latent variable to cluster the training images based on their appearance and classification results, and the M-step optimises the SSL classification and learns effective feature representations via semantic clustering. We present a theoretical result that shows the correctness and convergence of ScanMix, and an empirical result that shows that ScanMix has SOTA results on CIFAR-10/-100 (with symmetric, asymmetric and semantic label noise), Red Mini-ImageNet (from the Controlled Noisy Web Labels), Clothing1M and WebVision. In all benchmarks with severe label noise, our results are competitive to the current SOTA.},
+  arxiv     = {https://arxiv.org/abs/2103.11395},
+  code      = {https://github.com/ragavsachdeva/ScanMix}
 }
 
-@inproceedings{stretcu2020baics,
-    title = {Coarse-to-Fine Curriculum Learning for Classification},
-    author = {Stretcu, Otilia and Platanios, Emmanouil Antonios and Mitchell, Tom and Póczos, Barnabás},
-    booktitle = {International Conference on Learning Representations (ICLR) Workshop on Bridging AI and Cognitive Science (BAICS)},
-    year = {2020},
-    abbr = {ICLR},
-    pdf = {coarse-to-fine/coarse-to-fine-baics.pdf},
-    abstract = {{When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly. Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals, that are used to pre-train a model before tackling the original task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and use this acquired knowledge when learning to classify more fine-grained classes such as "cat", "dog", "car", and "truck". We evaluate our method on several established datasets and show performance gains of up to 7% increase in classification accuracy.}},
-    video = {https://youtu.be/hkY-Qlh4Hhc},
-    code = {https://github.com/otiliastr/coarse-to-fine-curriculum}
+@inproceedings{studynoisy2022,
+  author    = {Emeson Santana and
+               Gustavo Carneiro and
+               Filipe R. Cordeiro},
+  title     = {A Study on the Impact of Data Augmentation for Training Convolutional
+               Neural Networks in the Presence of Noisy Labels},
+  booktitle = {SIBGRAPI},
+  abbr      = {SIBGRAPI},
+  volume    = {abs/2208.11176},
+  year      = {2022},
+  url       = {https://doi.org/10.48550/arXiv.2208.11176},
+  doi       = {10.48550/arXiv.2208.11176},
+  eprinttype = {arXiv},
+  eprint    = {2208.11176},
+  timestamp = {Mon, 29 Aug 2022 15:51:41 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2208-11176.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {{Label noise is common in large real-world datasets, and its presence harms the training process of deep neural networks. Although several works have focused on the training strategies to address this problem, there are few studies that evaluate the impact of data augmentation as a design choice for training deep neural networks. In this work, we analyse the model robustness when using different data augmentations and their improvement on the training with the presence of noisy labels. We evaluate state-of-the-art and classical data augmentation strategies with different levels of synthetic noise for the datasets MNist, CIFAR-10, CIFAR-100, and the real-world dataset Clothing1M. We evaluate the methods using the accuracy metric. Results show that the appropriate selection of data augmentation can drastically improve the model robustness to label noise, increasing up to 177.84% of relative best test accuracy compared to the baseline with no augmentation, and an increase of up to 6% in absolute value with the state-of-the-art DivideMix training strategy.}},
+  arxiv   = {https://arxiv.org/abs/2208.11176}
 }
 
-@inproceedings{stretcu2019graph,
-    title = {Graph Agreement Models for Semi-Supervised Learning},
-    author = {Stretcu, Otilia and Viswanathan, Krishnamurthy and Movshovitz-Attias, Dana and Platanios, Emmanouil Antonios and Tomkins, Andrew and Ravi, Sujith},
-    booktitle = {Proceedings of the Thirty-third Conference on Neural Information Processing Systems},
-    year = {2019},
-    organization = {Neural Information Processing Systems},
-    url = {https://papers.nips.cc/paper/9076-graph-agreement-models-for-semi-supervised-learning},
-    abbr = {NeurIPS},
-    pdf = {gam/9076-graph-agreement-models-for-semi-supervised-learning.pdf},
-    poster = {gam/gam-poster.pdf},
-    supplement = {gam/appendix.pdf},
-    code = {https://github.com/tensorflow/neural-structured-learning/tree/master/research/gam},
-    abstract = {{Graph-based algorithms are among the most successful paradigms for solving semi-supervised learning tasks. Recent work on graph convolutional networks and neural graph learning methods has successfully combined the expressiveness of neural networks with graph structures. We propose a technique that, when applied to these methods, achieves state-of-the-art results on semi-supervised learning datasets. Traditional graph-based algorithms, such as label propagation, were designed with the underlying assumption that the label of a node can be imputed from that of the neighboring nodes. However, real-world graphs are either noisy or have edges that do not correspond to label agreement. To address this, we propose Graph Agreement Models (GAM), which introduces an auxiliary model that predicts the probability of two nodes sharing the same label as a learned function of their features. The agreement model is used when training a node classification model by encouraging agreement only for the pairs of nodes it deems likely to have the same label, thus guiding its parameters to better local optima. The classification and agreement models are trained jointly in a co-training fashion. Moreover, GAM can also be applied to any semi-supervised classification problem, by inducing a graph whenever one is not provided. We demonstrate that our method achieves a relative improvement of up to 72% for various node classification models, and obtains state-of-the-art results on multiple established datasets.}}
+@inproceedings{sampaio2022study,
+  title={A Study on Class Activation Map Methods to Detect Masses in Mammography Images using Weakly Supervised Learning},
+  author={Sampaio, Vicente and Cordeiro, Filipe R},
+  booktitle={Anais do XIX Encontro Nacional de Intelig{\^e}ncia Artificial e Computacional},
+  pages={437--448},
+  year={2022},
+  abbr = {ENIAC},
+  abstract = {{Nos últimos anos, modelos de aprendizado fracamente supervisionado têm auxiliado na detecção de lesões em imagens de mamografia, diminuindo a necessidade de anotações de pixels na imagem. A maioria dos modelos na literatura se baseia no uso de mapas de ativação CAM, não sendo explorado o uso de outros modelos de ativação para detecção em imagens de mamografia. Este trabalho apresenta um estudo do uso de diferentes métodos de mapas de ativação do estado da arte, aplicados para treinamento fracamente supervisionado em imagens de mamografia. Neste estudo, comparamos os métodos CAM, GradCAM, GradCAM++, XGradCAM e LayerCAM, utilizando a rede GMIC para detectar a presença de lesões em imagens de mamografia. A avaliação é feita utilizando a base VinDr-Mammo, utilizando as métricas de Acurácia, TPR, FNR e FPPI. Resultados mostram que o uso de diferentes estratégias de mapas de ativação nas etapas de treino e teste melhoram o resultado do modelo. Com isso, melhoramos os resultados do método GMIC, reduzindo o valor de FPPI e aumentando o valor de TPR.}}
 }
 
-@inproceedings{zhao2019efficient,
-    title = {Efficient Multitask Feature and Relationship Learning},
-    author = {Zhao, Han and Stretcu, Otilia and Smola, Alexander J. and Gordon, Geoffrey J.},
-    booktitle = {Proceedings of the 2019 Annual Conference on Uncertainty in Artificial Intelligence},
-    year = {2019},
-    organization = {Association for Uncertainty in Artificial Intelligence (UAI)},
-    abbr = {UAI},
-    pdf = {fetr-uai/275_paper.pdf},
-    poster = {fetr-uai/fetr-poster.pdf},
-    supplement = {fetr-uai/275_supplement.pdf},
-    abstract = {{We consider a multitask learning problem, in which several predictors are learned jointly. Prior research has shown that learning the relations between tasks, and between the input features, together with the predictor, can lead to better generalization and interpretability, which proved to be useful for applications in many domains. In this paper, we consider a formulation of multitask learning that learns the relationships both between tasks and between features, represented through a task covariance and a feature covariance matrix, respectively. First, we demonstrate that existing methods proposed for this problem present an issue that may lead to ill-posed optimization. We then propose an alternative formulation, as well as an efficient algorithm to optimize it. Using ideas from optimization and graph theory, we propose an efficient coordinate-wise minimization algorithm that has a closed form solution for each block subproblem. Our experiments show that the proposed optimization method is orders of magnitude faster than its competitors. We also provide a nonlinear extension that is able to achieve better generalization than existing methods.}}
+@article{DiasMNCMP21,
+  author    = {Lucas V. Dias and
+               P{\'{e}}ricles B. C. de Miranda and
+               Andr{\'{e}} C. A. Nascimento and
+               Filipe R. Cordeiro and
+               Rafael Ferreira Mello and
+               Ricardo B. C. Prud{\^{e}}ncio},
+  title     = {ImageDataset2Vec: An image dataset embedding for algorithm selection},
+  journal   = {Expert Syst. Appl.},
+  abbr = {ESA},
+  volume    = {180},
+  pages     = {115053},
+  year      = {2021},
+  url       = {https://doi.org/10.1016/j.eswa.2021.115053},
+  doi       = {10.1016/j.eswa.2021.115053},
+  timestamp = {Thu, 14 Oct 2021 08:46:34 +0200},
+  biburl    = {https://dblp.org/rec/journals/eswa/DiasMNCMP21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{Convolutional Neural Networks (CNNs) have become the main solution for image classification tasks in different applications. Although several CNN architectures are available, there is no best architecture regardless the problem at hand. The selection of the most suitable CNN architecture is usually performed by trial and error, which may take much time and computational resources. Meta-learning (MtL) is a framework developed in machine learning to perform algorithm selection based on the meta-features of each task being solved. Such meta-features are usually descriptive characteristics extracted from the training dataset available in the task at hand. Despite the increasing attention of MtL for algorithm selection, its success strongly depends on defining relevant meta-features to represent the classification tasks of interest. This paper proposes the ImageDataset2Vec method for extracting meta-features to describe image classification datasets. ImageDataset2Vec adopts a pre-trained deep neural network to extract features from images datasets, embedding them in a single feature vector. The derived meta-features are employed by MtL to select CNN architectures for image classification. The proposed approach was evaluated for selecting among six CNN algorithms in 45 two-classes image datasets. The results showed that MtL using ImageDataset2Vec overcame different baseline methods, selecting the best possible CNN algorithm in  of the datasets. Furthermore, the proposal was statistically equivalent to the ground truth when the best CNN is recommended, i.e., when MtL does not select the best CNN, it selects a competitive algorithm. These results show that the proposal was able to extract representative features from image datasets.}}
 }
 
-@article{ohbm,
-    title = {Investigating Task Effects on Brain Activity During Stimulus Presentation in MEG},
-    author = {Stretcu<nobr><em>*</em></nobr>, Otilia and Toneva<nobr><em>*</em></nobr>, Mariya and Póczos, Barnabás  and Mitchell, Tom},
-    journal = {Human Brain Mapping Conference},
-    year = {2019},
-    abbr = {HBM},
-    poster = {ohbm/ohbm-poster.pdf},
-    abstract = {{Recorded brain activity of subjects who perceive the same stimulus (e.g. a word) while performing
-        different semantic tasks (e.g. identifying whether the word belongs to a particular category) has been shown
-        to differ across tasks. However, it is not well understood how precisely the task contributes to this brain
-        activity. In the current work, we propose multiple hypotheses of how possible interactions between the task and
-        stimulus semantics can be related to the observed brain activity. We test these hypotheses by designing machine
-        learning models to represent each hypothesis, training them to predict the recorded brain activity, and
-        comparing their performance. We show that incorporating task semantics improves the prediction of
-        single-trial MEG data by an average of 10% across subjects.}},
+@inproceedings{CordeiroB0C21,
+  author    = {Filipe Rolim Cordeiro and
+               Vasileios Belagiannis and
+               Ian Reid and
+               Gustavo Carneiro},
+  title     = {PropMix: Hard Sample Filtering and Proportional MixUp for Learning
+               with Noisy Labels},
+  booktitle = {32nd British Machine Vision Conference 2021, {BMVC} 2021, Online,
+               November 22-25, 2021},
+  pages     = {187},
+  publisher = {{BMVA} Press},
+  abbr = {BMVC},
+  year      = {2021},
+  url       = {https://www.bmvc2021-virtualconference.com/assets/papers/0908.pdf},
+  timestamp = {Wed, 22 Jun 2022 16:52:45 +0200},
+  biburl    = {https://dblp.org/rec/conf/bmvc/CordeiroB0C21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{The most competitive noisy label learning methods rely on an unsupervised classification of clean and noisy samples, where samples classified as noisy are re-labelled
+and "MixMatched" with the clean samples. These methods have two issues in large
+noise rate problems: 1) the noisy set is more likely to contain hard samples that are incorrectly re-labelled, and 2) the number of samples produced by MixMatch tends to be
+reduced because it is constrained by the small clean set size. In this paper, we introduce
+the learning algorithm PropMix to handle the issues above. PropMix filters out hard
+noisy samples, with the goal of increasing the likelihood of correctly re-labelling the
+easy noisy samples. Also, PropMix places clean and re-labelled easy noisy samples in
+a training set that is augmented with MixUp, removing the clean set size constraint and
+including a large proportion of correctly re-labelled easy noisy samples. We also include
+self-supervised pre-training to improve robustness to high noisy label scenarios. Our
+experiments show that PropMix has state-of-the-art (SOTA) results on CIFAR-10/-100
+(with symmetric, asymmetric and semantic label noise), Red Mini-ImageNet (from the
+Controlled Noisy Web Labels), Clothing1M and WebVision. In severe label noise benchmarks, our results are substantially better than other methods. }},
+ code = {https://github.com/filipe-research/PropMix},
+ arxiv = {https://arxiv.org/abs/2110.11809}
 }
 
-@inproceedings{platanios2019curriculummt,
-    title = {Competence-based Curriculum Learning for Neural Machine Translation},
-    author = {Platanios, Emmanouil Antonios and Stretcu, Otilia and Neubig, Graham and Póczos, Barnabás and Mitchell, Tom},
-    booktitle = {Proceedings of the 2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics},
-    year = {2019},
-    organization = {Association for Computational Linguistics (ACL)},
-    abbr = {NAACL},
-    arxiv = {1903.09848},
-    code = {https://github.com/eaplatanios/curriculum},
-    abstract = {{Current state-of-the-art NMT systems use large neural networks that are not only slow to train, but also often require many heuristics and optimization tricks, such as specialized learning rate schedules and large batch sizes. This is undesirable as it requires extensive hyperparameter tuning. In this paper, we propose a curriculum learning framework for NMT that reduces training time, reduces the need for specialized heuristics or large batch sizes, and results in overall better performance. Our framework consists of a principled way of deciding which training samples are shown to the model at different times during training, based on the estimated difficulty of a sample and the current competence of the model. Filtering training samples in this manner prevents the model from getting stuck in bad local optima, making it converge faster and reach a better solution than the common approach of uniformly sampling training examples. Furthermore, the proposed method can be easily applied to existing NMT models by simply modifying their input data pipelines. We show that our framework can help improve the training time and the performance of both recurrent neural network models and Transformers, achieving up to a 70% decrease in training time, while at the same time obtaining accuracy improvements of up to 2.2 BLEU.}}
+@inproceedings{SilvaRMCSNMN21,
+  author    = {Cleber A. C. F. da Silva and
+               Daniel Carneiro Rosa and
+               P{\'{e}}ricles B. C. de Miranda and
+               Filipe R. Cordeiro and
+               Tapas Si and
+               Andr{\'{e}} C. A. Nascimento and
+               Rafael Ferreira Leite de Mello and
+               Paulo S. G. de Mattos Neto},
+  title     = {A Multi-Objective Grammatical Evolution Framework to Generate Convolutional
+               Neural Network Architectures},
+  booktitle = {{IEEE} Congress on Evolutionary Computation, {CEC} 2021, Krak{\'{o}}w,
+               Poland, June 28 - July 1, 2021},
+  abbr = {CEC},
+  pages     = {2187--2194},
+  publisher = {{IEEE}},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/CEC45853.2021.9504822},
+  doi       = {10.1109/CEC45853.2021.9504822},
+  timestamp = {Fri, 03 Dec 2021 17:38:14 +0100},
+  biburl    = {https://dblp.org/rec/conf/cec/SilvaRMCSNMN21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{Deep Convolutional Neural Networks (CNNs) have reached the attention in the last decade due to their successful application to many computer vision domains. Several handcrafted architectures have been proposed in the literature, with increasing depth and millions of parameters. However, the optimal architecture size and parameters setup are dataset-dependent and challenging to find. For addressing this problem, this work proposes a Multi-Objective Grammatical Evolution framework to automatically generate suitable CNN architectures (layers and parameters) for a given classification problem. For this, a Context-free Grammar is developed, representing the search space of possible CNN architectures. The proposed method seeks to find suitable network architectures considering two objectives: accuracy and F1-score. We evaluated our method on CIFAR-10, and the results obtained show that our method generates simpler CNN architectures and overcomes the results achieved by larger (more complex) state-of-the-art CNN approaches and other grammars.}}
 }
 
-@article{Chrabaszcz2019SubthalamicNA,
-    title = {Subthalamic nucleus and sensorimotor cortex activity during speech production},
-    author = {Chrabaszcz, Anna and Neumann,  W. J. and Stretcu, Otilia and Lipski, Witold J. and Bush, Alan and
-    Dastolfo-Hromack, Christina and Wang, Dengyu and Crammond, Donald J. and Shaiman, Susan and Dickey, Michael Walsh
-    and Holt, Lori L. and Turner, Robert S. and Fiez, Julie A. and Richardson, R. Mark},
-    journal = {The Journal of Neuroscience: the official journal of the Society for Neuroscience},
-    year = {2019},
-    abbr = {JNeurosci},
-    website = {https://www.ncbi.nlm.nih.gov/pubmed/30700532},
-    abstract = {{The sensorimotor cortex is somatotopically organized to represent the vocal tract articulators, such as lips, tongue, larynx, and jaw. How speech and articulatory features are encoded at the subcortical level, however, remains largely unknown. We analyzed local field potential (LFP) recordings from the subthalamic nucleus (STN) and simultaneous electrocorticography recordings from the sensorimotor cortex of 11 human subjects (1 female) with Parkinson's disease during implantation of deep brain stimulation (DBS) electrodes, while they read aloud three-phoneme words. The initial phonemes involved either articulation primarily with the tongue (coronal consonants) or the lips (labial consonants). We observed significant increases in high gamma (60-150 Hz) power in both the STN and the sensorimotor cortex that began before speech onset and persisted for the duration of speech articulation. As expected from previous reports, in the sensorimotor cortex, the primary articulators involved in the production of the initial consonants were topographically represented by high gamma activity. We found that STN high gamma activity also demonstrated specificity for the primary articulator, although no clear topography was observed. In general, subthalamic high gamma activity varied along the ventral-dorsal trajectory of the electrodes, with greater high gamma power recorded in the dorsal locations of the STN. Interestingly, the majority of significant articulator-discriminative activity in the STN occurred prior to that in sensorimotor cortex. These results demonstrate that articulator-specific speech information is contained within high gamma activity of the STN, but with different spatial and temporal organization compared to similar information encoded in the sensorimotor cortex. Clinical and electrophysiological evidence suggest that the subthalamic nucleus is involved in speech, however, this important basal ganglia node is ignored in current models of speech production. We previously showed that subthalamic nucleus neurons differentially encode early and late aspects of speech production, but no previous studies have examined subthalamic functional organization for speech articulators. Using simultaneous local field potential recordings from the sensorimotor cortex and the subthalamic nucleus in patients with Parkinson's disease undergoing deep brain stimulation surgery, we discovered that subthalamic nucleus high gamma activity tracks speech production at the level of vocal tract articulators, prior to the onset of vocalization and often prior to related cortical encoding.}},
+@inproceedings{LiuTCBRC21,
+  author    = {Fengbei Liu and
+               Yu Tian and
+               Filipe R. Cordeiro and
+               Vasileios Belagiannis and
+               Ian D. Reid and
+               Gustavo Carneiro},
+  editor    = {Chunfeng Lian and
+               Xiaohuan Cao and
+               Islem Rekik and
+               Xuanang Xu and
+               Pingkun Yan},
+  title     = {Self-supervised Mean Teacher for Semi-supervised Chest X-Ray Classification},
+  booktitle = {Machine Learning in Medical Imaging - 12th International Workshop,
+               {MLMI} 2021, Held in Conjunction with {MICCAI} 2021, Strasbourg, France,
+               September 27, 2021, Proceedings},
+  abbr = {MICCAI},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12966},
+  pages     = {426--436},
+  publisher = {Springer},
+  year      = {2021},
+  url       = {https://doi.org/10.1007/978-3-030-87589-3\_44},
+  doi       = {10.1007/978-3-030-87589-3\_44},
+  timestamp = {Thu, 23 Jun 2022 19:55:04 +0200},
+  biburl    = {https://dblp.org/rec/conf/miccai/LiuTCBRC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{The training of deep learning models generally requires a large amount of annotated data for effective convergence and generalisation. However, obtaining high-quality annotations is a laboursome and expensive process due to the need of expert radiologists for the labelling task. The study of semi-supervised learning in medical image analysis is then of crucial importance given that it is much less expensive to obtain unlabelled images than to acquire images labelled by expert radiologists. Essentially, semi-supervised methods leverage large sets of unlabelled data to enable better training convergence and generalisation than using only the small set of labelled images. In this paper, we propose Self-supervised Mean Teacher for Semi-supervised (S2MTS2) learning that combines self-supervised mean-teacher pre-training with semi-supervised fine-tuning. The main innovation of S2MTS2 is the self-supervised mean-teacher pre-training based on the joint contrastive learning, which uses an infinite number of pairs of positive query and key features to improve the mean-teacher representation. The model is then fine-tuned using the exponential moving average teacher framework trained with semi-supervised learning. We validate S2MTS2 on the multi-label classification problems from Chest X-ray14 and CheXpert, and the multi-class classification from ISIC2018, where we show that it outperforms the previous SOTA semi-supervised learning methods by a large margin. Our code will be available upon paper acceptance}}
 }
 
-@inproceedings{fu2017brainzoom,
-    title = {BrainZoom: High Resolution Reconstruction from Multi-modal Brain Signals},
-    author = {Fu<nobr><em>*</em></nobr>, Xiao and Huang<nobr><em>*</em></nobr>, Kejun and Stretcu<nobr><em>*</em></nobr>, Otilia and Song<nobr><em>*</em></nobr>, Hyun Ah and Papalexakis, Evangelos and Talukdar, Partha and Mitchell, Tom and Sidiropoulo, Nicholas and Faloutsos, Christos and Póczos, Barnabás},
-    booktitle = {Proceedings of the 2017 SIAM International Conference on Data Mining},
-    pages = {216--227},
-    year = {2017},
-    organization = {SIAM},
-    abbr = {SDM},
-    pdf = {brainzoom/siam_paper.pdf},
-    abstract = {{ How close can we zoom in to observe brain activity? Our understanding is limited by the resolution of imaging modalities that exhibit good spatial but poor temporal resolution, or vice-versa. In this paper, we propose BRAINZOOM, an efficient imaging algorithm that cross-leverages multi-modal brain signals. BRAINZOOM (a) constructs high resolution brain images from multi-modal signals, (b) is scalable, and (c) is flexible in that it can easily incorporate various priors on the brain activities, such as sparsity, low rank, or smoothness. We carefully formulate the problem to tackle nonlinearity in the measurements (via variable splitting) and auto-scale between different modal signals, and judiciously design an inexact alternating optimization-based algorithmic framework to handle the problem with provable convergence guarantees. Our experiments using a popular realistic brain signal simulator to generate fMRI and MEG demonstrate that high spatio-temporal resolution brain imaging is possible from these two modalities. The experiments also suggest that smoothness seems to be the best prior, among several we tried. }}
+@inproceedings{SilvaMC21,
+  author    = {Cleber A. C. F. da Silva and
+               P{\'{e}}ricles B. C. de Miranda and
+               Filipe R. Cordeiro},
+  title     = {A New Grammar for Creating Convolutional Neural Networks Applied to
+               Medical Image Classification},
+  booktitle = {34th {SIBGRAPI} Conference on Graphics, Patterns and Images, {SIBGRAPI}
+               2021, Gramado, Rio Grande do Sul, Brazil, October 18-22, 2021},
+  abbr = {SIBGRAPI},
+  pages     = {97--104},
+  publisher = {{IEEE}},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/SIBGRAPI54419.2021.00022},
+  doi       = {10.1109/SIBGRAPI54419.2021.00022},
+  timestamp = {Tue, 28 Dec 2021 14:39:31 +0100},
+  biburl    = {https://dblp.org/rec/conf/sibgrapi/SilvaMC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract= {{In the last decade, the adoption of Deep Convolutional Neural Networks (CNNs) has been successfully applied to solve computer vision tasks, such as image classification in the medical field. However, the several architectures proposed in the literature are composed of an increasing number of parameters and complexity. Therefore, finding the optimal trade-off between accuracy and model complexity for a given data set is challenging. To help the search for these suitable configurations, this work proposes using a new Context-Free Grammar associated with a Multi-Objective Grammatical Evolution Algorithm that generates suitable CNNs for a given image classification problem. In this structure, the new grammar maps every possible search space for the creation of networks. Furthermore, the Multi- Objective Grammatical Evolution Algorithm used optimizes this search taking into account two objective functions: accuracy and F 1 -score. Our proposal was used in three medical image datasets from MedMNIST: PathMNIST, OCTMNIST, and OrganMNIST_Axial. The results showed that our method generated simpler networks with equal or superior performance from state-of-the-art (more complex) networks and others CNNs also generated by grammatical evolution process}}
 }
 
-@article{zhao2017efficient,
-    title = {Efficient Multi-task Feature and Relationship Learning},
-    author = {Zhao, Han and Stretcu, Otilia and Negrinho, Renato and Smola, Alex and Gordon, Geoff},
-    journal = {In Neural Information Processing Systems Workshop on Learning With Limited Data},
-    year = {2017},
-    pdf = {fetr/LLD_2017_paper_15.pdf},
-    arxiv = {1702.04423},
-    abbr = {NeurIPS},
-    abstract = {{ We propose a multi-convex framework for multitask learning that improves pre- dictions by learning relationships both between tasks and between features. Our framework is a generalization of related methods, that either learn task relationships, or feature relationships, but not both. We start with a hierarchical Bayesian model, and use the empirical Bayes method to transform the underlying inference problem into a multi-convex problem. To tackle the multi-convex optimization problem, we propose a block coordinate-wise minimization algorithm that has a closed form solution for each block subproblem. Naively these solutions would be expensive to compute, but by using the theory of doubly stochastic matrices, we are able to reduce the covariance learning subproblem to a minimum-weight perfect matching problem on a complete bipartite graph, and solve it analytically and efficiently. To solve the weight learning subproblem, we propose three different strategies that can be used no matter whether the instances are shared by multiple tasks or not. We demonstrate the efficiency of our method on both synthetic datasets and real-world datasets. Experiments show that the proposed optimization method is orders of magnitude faster than the previous projected gradient method, and our model is able to exploit the correlation structures among multiple tasks and features. }},
-    poster = {fetr/poster_fetr_lld.pdf}
+@inproceedings{SachdevaCBRC21,
+  author    = {Ragav Sachdeva and
+               Filipe R. Cordeiro and
+               Vasileios Belagiannis and
+               Ian D. Reid and
+               Gustavo Carneiro},
+  title     = {EvidentialMix: Learning with Combined Open-set and Closed-set Noisy
+               Labels},
+  booktitle = {{IEEE} Winter Conference on Applications of Computer Vision, {WACV}
+               2021, Waikoloa, HI, USA, January 3-8, 2021},
+  pages     = {3606--3614},
+  publisher = {{IEEE}},
+  abbr = {WACV},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/WACV48630.2021.00365},
+  doi       = {10.1109/WACV48630.2021.00365},
+  timestamp = {Wed, 07 Dec 2022 23:09:22 +0100},
+  biburl    = {https://dblp.org/rec/conf/wacv/SachdevaCBRC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {{The efficacy of deep learning depends on large-scale data sets that have been carefully curated with reliable data acquisition and annotation processes. However, acquiring such large-scale data sets with precise annotations is very expensive and time-consuming, and the cheap alternatives often yield data sets that have noisy labels. The field has addressed this problem by focusing on training models under two types of label noise: 1) closed-set noise, where some training samples are incorrectly annotated to a training label other than their known true class; and 2) open-set noise, where the training set includes samples that possess a true class that is (strictly) not contained in the set of known training labels. In this work, we study a new variant of the noisy label problem that combines the open-set and closed-set noisy labels, and introduce a benchmark evaluation to assess the performance of training algorithms under this setup. We argue that such problem is more general and better reflects the noisy label scenarios in practice. Furthermore, we propose a novel algorithm, called EvidentialMix, that addresses this problem and compare its performance with the state-of-the-art methods for both closed-set and open-set noise on the proposed benchmark. Our results show that our method produces superior classification results and better feature representations than previous state-of-the-art methods.}},
+  code = {https:/github.com/ragavsachdeva/EvidentialMix},
+  arxiv = {https://arxiv.org/abs/2011.05704}
 }
+a service of  Schloss Dagstuhl - Leibniz Center for Informatics	homebrowsesearchaboutnfdi
 
-@article{Stretcu2017UnderstandingTN,
-    title = {Understanding the neural basis of speech production using Machine Learning},
-    author = {Stretcu, Otilia},
-    journal = {Master Thesis at Carnegie Mellon University},
-    year = {2017},
-    website = {https://www.ml.cmu.edu/research/dap-papers/F17/dap-stretcu-otilia.pdf},
-    abbr = {CMU},
-    abstract = {{<b>Background.</b> Understanding how neurons act together to produce speech is still an open problem. Several studies have attempted to decode different aspects of speech from the cortex neural activity, while a person is speaking [1, 8], but evidence from the medical domain [2] suggests that other brain regions, such as the subthalamic nucleus (STN), may also be involved in speech production. <br/>
 
-                <br/><b>Aim.</b> We explore the problem of decoding properties of speech (e.g. volume, manner, used articulators) from neural activity recordings. From a neuroscience perspective, the goal is to understand
-                which properties are encoded in different parts of the cortex and STN. From a machine learning
-                (ML) perspective, we are interested discover what models are best at extracting relevant information
-                from the scarce and noisy neural activity data.<br/>
 
-                <br/><b>Data</b>. The brain signals are recorded from 14 human subjects, while reading out loud words. The
-                data consists of ECoG recordings from the ventral primary motor and primary sensory cortical
-                areas, and Local Field Potentials from the STN.<br/>
-
-                <br/><b>Proposed Approach.</b> We approach several decoding tasks: (1) predicting when a person is
-                speaking or not, from their neural activity, (2) predicting the manner of speech (e.g. nasal, plosive)
-                and what articulators (e.g. tongue, lips) are used, and (3) predicting the volume/loudness of the
-                speech. For each of these tasks, we apply a series of ML methods, from simple regression models
-                (e.g. ridge regression) to deep learning models (e.g. recurrent neural networks). We apply these
-                models on different levels of preprocessing of the data, from electrode signals in time domain to
-                particular frequency bands. The goal is to understand which models are able to discover interesting
-                patterns, with different levels of domain knowledge required for preprocessing. Finally, we use our
-                best models to discover which areas of the brain encode different kinds of information about speech
-                production.<br/>
-
-                <br/><b>Results.</b> Our analysis shows that machine learning models are able to discover different speech
-                features from the neural activity. We were able to classify when a subject is speaking or not from
-                their neural activity in the primary motor and primary sensory cortex with up to 96% accuracy, and
-                up to 80% accuracy from the STN (an area whose connection to speech production is not entirely
-                understood). We were also able to decode certain features of speech (e.g. voicing, manner) and
-                inspect the brain regions and time points that contribute to the prediction. From a ML perspective,
-                we observe that even simple models overfit easily on our dataset due to the low-sample, highdimensionality problem, and that parameter tuning and proper regularization methods are crucial
-                in making accurate predictions. Finally, we recommend neural network based models if time and
-                computation resources are available for tuning the parameters, and simple models otherwise.<br/>
-
-                <br/><b>Broader impacts.</b> Our work has important practical applications in the medical domain. For example, a neural decoder can be used in neuroprosthetics to enable communication for the impaired.
-                Moreover, understanding the involvement of the STN in speech can improve the deep brain stimulation techniques used for treating Parkinson’s disease patients. More generally, our work provides
-                an useful overview of which ML models are suitable in dealing with different modalities of brain
-                data, which can facilitate further neuroscience studies.<br/>
-
-                <br/><b>Keywords:</b> neuroscience, speech production, ECoG, Local Field Potentials, machine learning.}},
-}
-
-@inproceedings{stretcu2015multiple,
-    title = {Multiple Frames Matching for Object Discovery in Video},
-    author = {Stretcu, Otilia and Leordeanu, Marius},
-    booktitle = {Proceedings of the 26th British Machine Vision Conference (BMVC)},
-    volume = {1},
-    number = {2},
-    pages = {3},
-    year = {2015},
-    abbr = {BMVC},
-    pdf = {videoPCA/bmvc_videopca.pdf},
-    website = {https://sites.google.com/site/multipleframesmatching/},
-    abstract = {{ Automatic discovery of foreground objects in video sequences is an important prob- lem in computer vision with applications to object tracking, video segmentation and clas- sification. We propose an efficient method for the discovery of object bounding boxes and the corresponding soft-segmentation masks across multiple video frames. We offer a graph matching formulation for bounding box selection and refinement using second and higher order terms. Our objective function takes into consideration local, frame-based information, as well as spatiotemporal and appearance consistency over multiple frames. First, we find an initial pool of candidate boxes using a novel and fast foreground esti- mation method in video, based on Principal Component Analysis. Then, we match the boxes across multiple frames using pairwise geometric and appearance terms. Finally, we refine their location and soft-segmentation using higher order potentials that estab- lish appearance regularity over multiple frames. We test our method on the large scale YouTube-Objects dataset and obtain state-of-the-art results on several object classes. }},
-    presentation = {http://www.bmva.org/bmvc/2015/papers/paper186/index.html},
-    code = {https://drive.google.com/drive/folders/0B7CshFGxfi_5aW13T2h5RDZ3djQ}
-}
-
-@article{emim,
-    title = {A multi-method driven evaluation of molecular imaging techniques},
-    author = {Stretcu, Otilia and Shavit, Yoli and Lio, Pietro},
-    journal = {Poster presentation at the 10th annual meeting of the European Society for Molecular Imaging (ESMI)},
-    year = {2015},
-    abbr = {EMIM},
-    organization = {European Society for Molecular Imaging (ESMI)},
-    abstract = {{In the past decade, we have witnessed significant advancements in image analysis methods.
-        However, the analysis of molecular images such as fluorescent in situ hybridization (FISH) still
-        relies heavily on manual evaluation by experts. For automated image analysis to be adopted by
-        clinicians there is a need for more reliable tools that can extract rich information from molecular
-        images. The first step in developing such tools is to evaluate the performance of state-of-the-art
-        image analysis methods. This assessment could be further used to develop of a multi-method
-        approach that would integrate partial information extracted by each constituent method, to build an
-        augmented microscopic reality.
-        We investigate a set of techniques which have shown promising results in the analysis of images
-        that share many similarities with molecular images. Namely, wavelets, that have successfully been
-        used to describe structural patterns in astronomical images [1], and Markov Random Fields. We
-        apply them to a benchmark of molecular FISH images and evaluate their performance with respect
-        to two key tasks: (1) denoising and thresholding; (2) segmentation and detection of various
-        structures(e.g. interphase nuclei, metaphase chromosomes, multi-colored probes). We further test
-        whether data from high-throughput Chromosome Conformation Capture (Hi-C) could enrich the
-        information obtained.
-        We show the results of our analysis and identify which techniques are best for describing certain
-        properties of images (e.g. intensity, edges). We further discuss methodologies of integrating
-        complementary methods and data to improve the overall performance.
-        The integration of multiple methods can result in overall improvement with respected to key tasks
-        in the analysis of molecular images. Coupling a multi-method approach with Chromosome
-        Conformation Capture data can help to extract additional information from images.
-        <br/><br/>
-        [1] Mertens, F., and Lobanov A. (2014) Wavelet-based decomposition and analysis of structural
-        patterns in astronomical images. arXiv preprintarXiv:1410.3732}},
-    poster = {emim/emim_poster.pdf}
-}

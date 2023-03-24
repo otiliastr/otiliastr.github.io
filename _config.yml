@@ -2,25 +2,25 @@
 # Site Settings
 # -----------------------------------------------------------------------------
 
-name: Otilia Stretcu
-email: otiliastr@gmail.com
+name: Filipe Cordeiro
+email: filipe.rolim@ufrpe.br
 
 # footer_text: >
 #   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 # last_updated: true
 
-url:  # the base hostname & protocol for your site
+url: https://filipe-research.github.io/ # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 
 # -----------------------------------------------------------------------------
 # Social Integration
 # -----------------------------------------------------------------------------
-scholar_userid: UcT4CXoAAAAJ
-github_username: otiliastr
-linkedin_username: otiliastr
-facebook_username: otilia.stretcu
-twitter_username: otilia_stretcu
+scholar_userid: w-c3Z2EAAAAJ
+github_username: filipe-research
+#linkedin_username: otiliastr
+#facebook_username: otilia.stretcu
+#twitter_username: otilia_stretcu
 contact_note: Feel free to drop me a line via e-mail.
 
 
@@ -84,7 +84,7 @@ plugins:
 
 # Jekyll-Scholar
 scholar:
-  last_name: Stretcu
+  last_name: Cordeiro
   style: apa
   locale: en
   sort_by: year
