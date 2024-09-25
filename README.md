@@ -1,4 +1,4 @@
-# Otilia Stretcu's personal webpage
+# Xin Cui's personal webpage
 
 This is the personal website of Xin Cui, which can be visualized at [https://xcui1997.github.io/]
 
@@ -31,6 +31,7 @@ After you are done, you can deploy it to [GitHub Pages](https://pages.github.com
 ```bash
 $ ./bin/deploy
 ```
+
 Note: make sure to commit all your changes on the `src` branch before deploying!
 
 ### Features
@@ -49,8 +50,10 @@ You can also add new `*.bib` files and customize the look of your publications h
 Keep meta-information about your co-authors in `_data/coauthors.yml` and Jekyll will insert links to their webpages automatically.
 
 #### Collections
+
 This Jekyll theme implements collections to let you break up your work into categories.
 The example is divided into news, poetry, and projects, but easily revamp this into apps, short stories, courses, or whatever your creative work is.
+
 > To do this, edit the collections in the config file, create a corresponding folder, and update the portfolio and poetry source files.
 
 Three different layouts are included—the poetry layout, for a simple list of entries, the blog layout (`blog/index.html`), for more detailed descriptive list of entries, and the portfolio layout.
@@ -59,16 +62,19 @@ If no image is provided, the square is auto-filled with the chosen theme color.
 Thumbnail sizing is not necessary, as the grid crops images perfectly.
 
 #### Theming
+
 Six beautiful theme colors have been selected to choose from.
 The default is purple, but quickly change it by editing the `_sass/base.scss` file in line 40.
 The color variable are listed there, as well.
 
 #### Photos
+
 Photo formatting is made simple using rows of a 3-column system.
 Make photos 1/3, 2/3, or full width.
 Easily create beautiful grids within your blog posts and projects pages.
 
 #### Code Highlighting
+
 This theme implements Jekyll's built in code syntax highlighting with Pygments.
 Just use a liquid tag to delineate your code:
 {% highlight python %} code code code {% endhighlight %}
