@@ -20,12 +20,12 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
 
 <div style="display: flex; flex-wrap: wrap;">
     <div class="text-justify p-0">
-        <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
+        <div class="col-xs-12 col-sm-5 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
           <img class="profile-img img-responsive" src="{{ 'prof_pic.jpg' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
         </div>
 
         <p>
-            I am a Senior Research Scientist at <a href="https://ai.google/" target="_blank">Google Research</a> in Mountain View, California, working on machine learning research.
+            I am a Senior Research Scientist at <a href="https://ai.google/" target="_blank">Google Research</a> in Mountain View, California, working on machine learning methods.
         </p>
         
         <p>
