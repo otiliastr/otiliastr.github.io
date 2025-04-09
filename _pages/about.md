@@ -9,8 +9,10 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
 ---
 
 <div class="col p-0 pt-4 pb-4">
-  <h1 class="pb-3 title text-left font-weight-bold">Otilia Stretcu</h1>
-  <h6 class="m-0 mb-2" style="font-size: 0.83em;">{{ page.description }}</h6>
+  <h1 class="title text-left font-weight-bold">Otilia Stretcu</h1>
+  {% if page.description %}
+    <h6 class="m-0 mb-2" style="font-size: 0.83em;">{{ page.description }}</h6>
+  {% endif %}
   {% if page.address %}
       <h6 class="m-0 mb-2" style="font-size: 0.83em;">{{ page.address }}</h6>
   {% endif %}
@@ -25,11 +27,26 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
         </div>
 
         <p>
-            I am a Senior Research Scientist at <a href="https://ai.google/" target="_blank">Google Research</a> in Mountain View, California, working on machine learning methods.
+          I am a Senior Research Scientist at <a href="https://ai.google/" target="_blank">Google Research</a>  working on core machine learning methodology—primarily around vision-language models, data mining, active learning, and safety—with applications in various areas including computer vision and natural language processing.
         </p>
-        
         <p>
-            Previously, I was a PhD student in the <a href="http://www.ml.cmu.edu/" target="_blank">Machine Learning Department</a> at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, co-advised by <a href="http://www.cs.cmu.edu/~tom/" target="_blank">Tom Mitchell</a> and <a href="http://www.cs.cmu.edu/~bapoczos/" target="_blank">Barnabàs Pòczos</a>.
+          My current research focuses on two key problems:
+        </p>
+        <ol style="padding-inline-start: 30px;">
+          <li class="pb-2">
+            <b> Enabling domain experts to effectively build models without requiring AI expertise. </b>
+            Training AI models for specialized domains typically requires curating large datasets, which is expensive, time-consuming and usually demands AI expertise. My research removes that barrier by automating the process of mining the right kinds of data and iteratively improving the model, and spans multiple areas including modeling, active learning and distillation.
+          </li>
+          <li> 
+            <b> Improving AI Trust & Safety models to make the internet safer. </b> As powerful LLMs become more accessible, their potential for malicious use (like generating online abuse/threats) grows. My research flips this around, leveraging LLM capabilities to detect and counteract malicious activities. This involves fundamental research aimed at expanding the reasoning capabilities of LLMs over multimodal data, to better identify sophisticated harmful content and malicious behaviors.
+          </li>
+        </ol>
+
+        <p>
+        If either or both of these problems excite you, feel free to reach out!
+        </p>
+        <p>
+            Previously, I obtained my PhD from the <a href="http://www.ml.cmu.edu/" target="_blank">Machine Learning Department</a> at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, co-advised by <a href="http://www.cs.cmu.edu/~tom/" target="_blank">Tom Mitchell</a> and <a href="http://www.cs.cmu.edu/~bapoczos/" target="_blank">Barnabàs Pòczos</a>.
             My PhD research focused on developing algorithms for machine learning, mainly focused on semi-supervised learning, curriculum learning, multitask learning, and graph-based problems.
             I am also passionate about applying machine learning methods in neuroscience, in order to study how the brain understands language and controls speech.
             Previously, I did some research in Computer Vision, with the goal of detecting and tracking objects in videos.

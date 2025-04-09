@@ -80,6 +80,11 @@ progress {
   // @include shadow;
 
   width: auto;
+  // height: auto;
+  // border-radius: 50% !important;
+  // border-radius: 5% !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  // max-width: 200px;
 }
 
 .contact-icon {
