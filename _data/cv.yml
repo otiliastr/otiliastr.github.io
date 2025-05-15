@@ -11,9 +11,11 @@
 - title: Research Areas
   type: list
   contents:
-  - My research focuses on developing algorithms for machine learning, mainly focused on semi-supervised learning, curriculum learning, multitask learning, and graph-based problems.
-  - I am also interested in creating AI agents that can understand language and reason, therefore I have also worked on natural language processing with a focus on question answering and problem solving.
-  - I have also worked on machine learning methods for neuroscience, with the goal of understanding how the human brain understands language and controls speech.
+  - 'I work on machine learning methodology—primarily around vision-language models, active learning, and safety—with applications in various areas including computer vision and natural language processing. My current research focuses on two key problems:'
+  - '1) Enabling domain experts to effectively build models without requiring AI expertise. I work on automating the process of mining the right kinds of data and iteratively improving the model, which spans multiple areas including modeling, active learning and distillation.'
+  - '2) Improving AI Trust & Safety models to make the internet safer, by leveraging LLM and VLM capabilities to detect and counteract malicious activities. This involves fundamental research aimed at expanding the reasoning capabilities of LLMs over multimodal data, to better identify sophisticated harmful content and malicious behaviors.'
+  - 'During my PhD I also worked on curriculum learning, semi-supervised learning, multi-task learning, and graph-based problems. I am also passionate about using machine learning methods for health and sciences.'
+
 
 - title: Education
   type: table
@@ -145,14 +147,17 @@
     - '<a href="https://www.iie.org/Programs/GE-Foundation-Scholar-Leaders" target="_blank"><b>GE (General Electric) Foundation Scholar Leaders Program </b></a> (2012)'
   - year: Awards
     items:
+    - '<b>Google Research Tech Impact Award</b> for developing cutting-edge AI for improving trust & safety across Google products (2024)'
+    - '<b>Google Research Tech Impact Award</b> for developing machine learning technology that enables users without AI expertise to effortlessly train AI models (2023)'
+    - '<b>Google Ads Tech Impact Award</b> for developing ads safety technology (2024, 2023, 2022)'
     - 'Best poster award at the Eastern European Machine Learning Summer School in Bucharest, Romania (2019)'
     - 'Machine Learning Department Teaching Assistant Award (2018)'
     - 'Carnegie Mellon University Neurohackathon: 2<sup>nd</sup> place (2017)'
     - 'KTH University Programming Challenge, Sweden: Top 10 contestants (2013)'
-    - 'ACM International Collegiate Programming Contest (<b>ACM-ICPC</b>): Honorable Mention in Southeastern European Regional (2013, 2012, 2011)'
+    - '<b>ACM International Collegiate Programming Contest (ACM-ICPC)</b>: Honorable Mention in Southeastern European Regional (2013, 2012, 2011)'
     - '<b>Microsoft Imagine Cup</b>:
-       <ul>
-          <li> Top 20 in the World Finals (2012) </li>
+       <ul> 
+          <li> <a href="https://techcommunity.microsoft.com/blog/studentdeveloperblog/announcing-the-imagine-cup-2012-grant-finalists/311230" target="_blank"><b>Top 13</b></a> in the World Finals (2012) </li>
           <li> 1<sup>st</sup> team in the Romanian National Finals (2012) </li>
        </ul>'
     - '<b>Romanian National Olympiad in Informatics</b>:
@@ -164,6 +169,17 @@
           <li> Honorable Mention: 2010, 2008, 2007, 2003 </li>
         </ul>'
     - 'Kangaroo International Mathematical Competition: 2<sup>nd</sup> prize in Romanian National Finals (2009, 2010)'
+
+- title: Invited talks
+  type: list
+  contents: 
+  - '○ Invited talk at the ICLR workshop <a href="https://sites.google.com/view/icbinb-2025" target="_blank"> <b>I Can’t Believe It’s Not Better: Challenges in Applied Deep Learning</b></a> (2025).'
+  - '○ Lecture on "Jointly modeling images and text" at the Polytechnic University of Bucharest, Romania, as a guest lecturer in the Computer Vision class, part of the Master’s program in AI (2022).'
+  - '○ Invited talk at the Quantitative Research Colloquium (QRC) hosted by Morgan Stanley (2021).'
+  - '○ Invited talk at Health@Scale on Graph Agreement Models for Semi-Supervised Learning (2020).'
+  - '○ Represented CMU at the MIDAS Data Science Annual Symposium at the University of Michigan (2019).'
+  - '○ Talk at the CMU AI Seminar on Contextual Parameter Generation for Knowledge Graph Link Prediction (2019).'
+
 
 - title: Teaching Experience
   type: table
@@ -188,13 +204,13 @@
     - Co-organized a competitive programming seminar at Politehnica University of Timisoara for university and high-school students interested to train for algorithmic competitions (e.g. ACM-ICPC, informatics olympiad).
     - Taught algorithms and data structures used in competitive programming, designed and solved practice problems and internal competitions.
 
-- title: Computer skills
-  type: list
-  contents:
-  - '○ Programming languages: C, C++, Python, Matlab, Java.'
-  - '○ Data Structures and Algorithms: Familiarity with concepts used in algorithmic competitions and machine learning research.'
-  - '○ Frameworks: Tensorflow, NumPy, SciPy, Pandas.'
-  - '○ Database Systems: MySQL.'
+# - title: Computer skills
+#   type: list
+#   contents:
+#   - '○ Programming languages: C, C++, Python, Matlab, Java.'
+#   - '○ Data Structures and Algorithms: Familiarity with concepts used in algorithmic competitions and machine learning research.'
+#   - '○ Frameworks: Tensorflow, NumPy, SciPy, Pandas.'
+#   - '○ Database Systems: MySQL.'
 
 - title: Technical Projects
   type: table
@@ -220,20 +236,21 @@
   contents:
   - year: 2019 - now
     description:
-      - 'Mentorship:'
-      - '- Mentor for the CMU AI mentoring program (2019 - now)'
-      - '- Mentor for first year PhD students at CMU (2019 - now)'
+      - '<b>Mentorship:</b>'
+      - '- Mentor in the <a href="https://events.google.com/intl/en_ALL/mindthegap/" target="_blank"><b>Mind the gap</b></a> program organized by Google, which aims to increase representation of girls in tech (2022)'
+      - '- Mentor for the Carnegie Mellon University AI mentoring program (2019 - 2021)'
+      - '- Mentor for first year PhD students at Carnegie Mellon University (2019 - 2021)'
+  - year: 2018 - now
+    description: '<b>Program Committees:</b> NeurIPS (2023, 2022, 2021, 2020), ICML (2019), AISTATS (2020, 2019), ICLR (2020, 2018), ICLR-LLD (2019), PLOS ONE (2019), ICML-GRL (2020), AAAI (2021), Google Research Scholar Program (2023, 2024).'
   - year: 2019
     description: 'Organized a workshop on <a href="https://www.amtl-workshop.org/home" target="_blank"><b>Adaptive & Multitask Learning</b></a> at ICML 2019.'
-  - year: 2018 - now
+  - year: 2018 - 2021
     description: 'Founding member of the <a href="http://cmu.aiplus.club/" target="_blank"><b> AI+ Club</b></a>  at Carnegie Mellon University (CMU).'
-  - year: 2018 - now
-    description: 'I was a reviewer for the following journals, conferences and workshops: ICML (2019), AISTATS (2019, 2020), ICLR (2018, 2020), ICLR-LLD (2019), PLOS ONE (2019), ICML-GRL (2020), NeurIPS (2020), AAAI (2021).'
   - year: 2018 - 2019
     description: 'Treasurer of the Romanian Students Association at CMU.'
-  - year: 2016 - now
+  - year: 2016 - 2021
     description: 'Member of the Doctoral Review Committee of the Machine Learning Department at CMU.'
-  - year: 2016 - now
+  - year: 2016 - 2021
     description: 'Member of the Education Review Committee of the Machine Learning Department at CMU, which aims to improve the PhD program.'
   - year: 2016 - 2018
     description: 'President of the Romanian Students Association at CMU.'
@@ -247,5 +264,5 @@
 - title: Other Interests
   type: list
   contents:
-  - 'Sports: squash, volleyball, tennis, climbing, hiking'
-  - 'Hobbies: traveling, painting, movies, arts and crafts'
+  - 'Sports: squash, volleyball, tennis, climbing, hiking.'
+  - 'Hobbies: traveling, reading, arts and crafts, learning languages on Duolingo, GeoGuessr'
