@@ -6,6 +6,22 @@ nav: teaching
 description: classes, workshops, and teaching material
 ---
 
+<h3 class="mt-4">Eastern European Machine Learning Summer School (<a href="https://www.eeml.eu/" target="_blank">EEML</a>)</h3>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Vision-Language Models</h5>
+      </div>
+    </div>
+    <h6 class="font-italic mt-2 mt-sm-0">Summer 2025: Speaker</h6>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">○ Taught a lecure on Vision-Language Models (<a href="/assets/pdf/VLM-lecture-EEML-2025.pdf" target="_blank">sildes</a>).</li>
+      <li class="list-group-item">○ Student mentoring.</li>
+    </ul>
+  </div>
+</div>
+
 <h3 class="mt-4">Carnegie Mellon University</h3>
 
 <div class="card mt-3">
