@@ -27,40 +27,25 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
         </div>
 
         <p>
-          I am a Senior Research Scientist at <a href="https://ai.google/" target="_blank">Google Research</a>  working on core machine learning methodology—primarily around vision-language models, data mining, active learning, and safety—with applications in various areas including computer vision and natural language processing.
+          I am a Staff Research Scientist at <a href="https://ai.google/" target="_blank">Google Research</a>.
         </p>
         <p>
-          My current research focuses on two key problems:
+          My research focuses on developing new methods for advancing agentic AI capabilities. A major application of this work is building holistic agents for safety and abuse detection that can effectively leverage multiple kinds of multimodal data, combining structured information, such as graphs, with unstructured information, such as text and images. 
         </p>
-        <ol style="padding-inline-start: 30px;">
-          <li class="pb-2">
-            <b> Enabling domain experts to effectively build models without requiring AI expertise. </b>
-            Training AI models for specialized domains typically requires curating large datasets, which is expensive, time-consuming and usually demands AI expertise. My research removes that barrier by automating the process of mining the right kinds of data and iteratively improving the model, and spans multiple areas including modeling, active learning and distillation.
-          </li>
-          <li> 
-            <b> Improving AI Trust & Safety models to make the internet safer. </b> As powerful LLMs become more accessible, their potential for malicious use (like generating online abuse/threats) grows. My research flips this around, leveraging LLM capabilities to detect and counteract malicious activities. This involves fundamental research aimed at expanding the reasoning capabilities of LLMs over multimodal data, to better identify sophisticated harmful content and malicious behaviors.
-          </li>
-        </ol>
-
         <p>
-        If either or both of these problems excite you, feel free to reach out!
+          Earlier at Google, my work centered on improving AI Trust & Safety models and on building automated ML systems that enable domain experts to train specialized models without requiring AI expertise.
         </p>
         <p>
             Previously, I obtained my PhD from the <a href="http://www.ml.cmu.edu/" target="_blank">Machine Learning Department</a> at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, co-advised by <a href="http://www.cs.cmu.edu/~tom/" target="_blank">Tom Mitchell</a> and <a href="http://www.cs.cmu.edu/~bapoczos/" target="_blank">Barnabàs Pòczos</a>.
-            My PhD research focused on developing algorithms for machine learning, mainly focused on semi-supervised learning, curriculum learning, multitask learning, and graph-based problems.
-            I am also passionate about applying machine learning methods in neuroscience, in order to study how the brain understands language and controls speech.
-            Previously, I did some research in Computer Vision, with the goal of detecting and tracking objects in videos.
+            My research focused on developing algorithms for semi-supervised learning, curriculum learning, multi-task learning, and graph-based learning.
+            Alongside this, I applied machine learning to neuroscience, studying how the brain understands language and controls speech.
+            Before CMU, I graduated with an <a href="https://www.cst.cam.ac.uk/admissions/acs" target="_blank">M.Phil. in Advanced Computer Science</a> from the <a href="https://www.cam.ac.uk/" target="_blank">University of Cambridge</a>.
+            More broadly, I remain passionate about applying machine learning to health and the sciences.
+        </p>
+        <p>
+         📚 🎨 🌍 Outside of research, you'll most likely find me lost in a fantasy novel, elbow-deep in some arts and crafts project I definitely underestimated, or exploring new places, whether that is a hidden trail near where I live or a city halfway across the world.
         </p>
     </div>
-</div>
-
-<div class="col text-justify p-0">
-    <p>
-        Before I joined CMU, I graduated with an <a href="https://www.cst.cam.ac.uk/admissions/acs" target="_blank">M.Phil. in Advanced Computer Science</a>
-        from the <a href="https://www.cam.ac.uk/" target="_blank">University of Cambridge</a>, UK.
-        In my Master's thesis I used Machine Learning methods to detect and align chromosomes in microscope images,
-        advised by <a href="https://www.cl.cam.ac.uk/~pl219/" target="_blank">Pietro Lió</a>.
-    </p>
 </div>
 
 <!-- News -->
@@ -68,6 +53,8 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
   <h1 class="title mb-4 p-0">news</h1>
   {% assign news = site.news | reverse %}
   {% for item in news limit: site.news_limit %}
+    {% assign item_year = item.date | date: "%Y" | plus: 0 %}
+    {% if item_year >= 2025 %}
     <div class="row p-0">
       <div class="col-sm-2 p-0">
         <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
@@ -78,5 +65,6 @@ address: <a href="https://www.google.com/maps/place/Googleplex/@37.4220656,-122.
         <p>{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</p>
       </div>
     </div>
+    {% endif %}
   {% endfor %}
 </div>

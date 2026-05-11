@@ -2,6 +2,7 @@
 layout: page
 title: projects
 nav: projects
+nav_exclude: true
 permalink: /projects/
 description: some of the projects I have worked on
 ---

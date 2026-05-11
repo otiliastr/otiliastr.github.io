@@ -6,14 +6,13 @@
   - name: Contact
     value: otiliastr [at] gmail [dot] com
   - name: Languages
-    value: Romanian (native), English (fluent), Spanish (beginner), German (beginner), Swedish (beginner)
+    value: Romanian (native), English (fluent), Spanish (beginner), German (beginner)
 
 - title: Research Areas
   type: list
   contents:
-  - 'I work on machine learning methodology—primarily around vision-language models, active learning, and safety—with applications in various areas including computer vision and natural language processing. My current research focuses on two key problems:'
-  - '1) Enabling domain experts to effectively build models without requiring AI expertise. I work on automating the process of mining the right kinds of data and iteratively improving the model, which spans multiple areas including modeling, active learning and distillation.'
-  - '2) Improving AI Trust & Safety models to make the internet safer, by leveraging LLM and VLM capabilities to detect and counteract malicious activities. This involves fundamental research aimed at expanding the reasoning capabilities of LLMs over multimodal data, to better identify sophisticated harmful content and malicious behaviors.'
+  - My research focuses on developing new methods for advancing agentic AI capabilities. A major application of this work is building holistic agents for safety and abuse detection that can effectively leverage multiple kinds of multimodal data, combining structured information, such as graphs, with unstructured information, such as text and images.
+  - Earlier at Google, my work centered on improving AI Trust & Safety models and on building automated ML systems that enable domain experts to train specialized models without requiring AI expertise.
   - 'During my PhD I also worked on curriculum learning, semi-supervised learning, multi-task learning, and graph-based problems. I am also passionate about using machine learning methods for health and sciences.'
 
 
@@ -58,12 +57,17 @@
 - title: Work Experience
   type: table
   contents:
-  - title: 'Senior Research Scientist at Google AI'
-    year: 2023 - now
+  - title: 'Staff Research Scientist at Google Research'
+    year: 2026 - now
     location: USA
     description:
       - 'Mountain View, CA, USA'
-  - title: 'Research Scientist at Google AI'
+  - title: 'Senior Research Scientist at Google Research'
+    year: 2023 - 2026
+    location: USA
+    description:
+      - 'Mountain View, CA, USA'
+  - title: 'Research Scientist at Google Research'
     year: 2021 - 2023
     location: USA
     description:
@@ -147,6 +151,7 @@
     - '<a href="https://www.iie.org/Programs/GE-Foundation-Scholar-Leaders" target="_blank"><b>GE (General Electric) Foundation Scholar Leaders Program </b></a> (2012)'
   - year: Awards
     items:
+    - 'Elected by the <b>US National Academy of Engineering</b> to attend the <a href="https://www.naefrontiers.org/218398/2025-US-Frontiers-of-Engineering-Symposium" target="_blank">Grainger Foundation Frontiers of Engineering Symposium</a> for top early-career engineers (2025)'
     - '<b>Google Research Tech Impact Award</b> for developing cutting-edge AI for improving trust & safety across Google products (2024)'
     - '<b>Google Research Tech Impact Award</b> for developing machine learning technology that enables users without AI expertise to effortlessly train AI models (2023)'
     - '<b>Google Ads Tech Impact Award</b> for developing ads safety technology (2024, 2023, 2022)'

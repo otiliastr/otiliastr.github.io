@@ -48,7 +48,7 @@
             </a>
           </li>
           {% for p in site.pages %}
-            {% if p.title and p.url != "/" %}
+            {% if p.title and p.url != "/" and p.nav_exclude != true %}
               <li class="nav-item {% if page.nav == p.nav %}navbar-active font-weight-bold{% endif %}">
                   <a class="nav-link" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">
                     {{ p.title }}
